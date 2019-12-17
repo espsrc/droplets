@@ -1,3 +1,9 @@
+---
+author: Javier Moldon
+title: Demo Slide
+date: today
+---
+
 # title 1
 - list entry 1
 - list entry 2
@@ -8,12 +14,12 @@
 - and yet onother one
 - and finally the last one
 
-# This is an image example
+# Image from the web
 
 Here's an image of something:
-![](images/lc.png)
+![](https://miro.medium.com/max/693/1*I3LYS67BPjlQYJC3SWRxHA.png)
 
 # Some formula
 
-$$y = x^2 \hbox{ when $x > 2$}$$ 
-
+$$y = x^2$$
+$$x > 2$$
