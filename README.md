@@ -1,2 +1,4 @@
 # droplets
-Regular training session for collaborative and reproducibility tools
+Regular training session for collaborative and reproducibility tools for scientific research.
+
+![Water droplets](water_droplets.png)
