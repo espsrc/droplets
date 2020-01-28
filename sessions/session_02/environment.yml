@@ -1,0 +1,10 @@
+
+name: session-02
+
+dependencies:
+ - python
+ - jupyterlab
+ - matplotlib
+ - numpy
+ - pandas
+ - seaborn
