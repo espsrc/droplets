@@ -6,6 +6,13 @@ working environment with all the dependencies with a few lines of code.
 Alternatively, with a single click you can just deploy a ready-to-work virtual
 machine with Binder.
 
+## Execute online (Binder)
+
+Just follow this link and a virtual machine will be created to serve an executable version of the Jupyter notebook with the exploratory Gaia analysis. It will take a couple of minutes to set up everything.
+
+[Binder exploratory Gaia analysis](https://mybinder.org/v2/gh/spsrc/droplets/master?filepath=gaia_exploratory%2Fjupyter_exploratory.ipynb)
+
+
 ## Execute on your local machine
 
 ### On Linux:
@@ -30,8 +37,3 @@ jupyter notebook
 ```bash
 TBD
 ```
-
-## Execute online (Binder)
-
-TBD
-

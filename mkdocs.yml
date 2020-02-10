@@ -9,12 +9,12 @@ nav:
     - Jupyter notebooks: jupyter.md
     - Collaborative science online, Github: github.md
     - Version control with git: git.md
-    - Software management with conda: conda.md
-    - Python visualization and ipython widgets: interactive.md
-    - Binder: binder.md
-    - Snakemake: snakemake.md
-    - Containers: containers.md
-    - Reproducibility examples: reproducibility.md
+    - Software management with conda (TBD): conda.md
+    - Python visualization and ipython widgets (TBD): interactive.md
+    - Binder (TBD): binder.md
+    - Snakemake (TBD): snakemake.md
+    - Containers (TBD): containers.md
+    - Reproducibility examples (TBD): reproducibility.md
     - Testing: science.md
 
 #theme: 'material' # Excellent searcher. Too clear. Hard to find subsections
