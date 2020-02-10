@@ -1,0 +1,13 @@
+name: droplets
+
+channels:
+ - conda-forge
+ - defaults
+
+dependencies:
+ - python
+ - astropy
+ - astroquery
+ - matplotlib
+ - numpy
+ - pandas
