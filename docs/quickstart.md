@@ -21,19 +21,19 @@ If you don't have a conda environment on your system, this will create a tempora
 ```bash
 git clone https://github.com/spsrc/droplets.git
 cd droplets
-curl https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash ./Miniconda3-latest-Linux-x86_64.sh -b -p my_conda_env
 rm ./Miniconda3-latest-Linux-x86_64.sh
 source my_conda_env/etc/profile.d/conda.sh 
 ```
 ```bash
-conda create -n droplets python=3.6
+conda create env -f environment.yml
 conda activate droplets 
 jupyter notebook
 ```
 
 ### On MacOS:
-
+Follow the same steps as above but instead download Miniconda with this command:
 ```bash
-TBD
+curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
 ```
