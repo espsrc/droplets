@@ -1,5 +1,5 @@
 
-# Droplets - software for reproducible and collaborative research
+# Droplets - Reproducible and Collaborative Research Resources for Astronomy
 
 This initiative compiles a series of tutorials describing tools and good
 practices to make your research analysis more organized, automatic and reproducible with
@@ -17,7 +17,7 @@ some software you need.
 Following this philosophy, instead of presenting a complex system to organize full reproducibily at once, we will be progressively incorporating new approaches as they respond to new necessities we encounter. The topics covered here are:
 
 - Jupyter: the XXI century lab book
-- Collaborative science with git
+- Collaborative Jupyter notebooks through git
 - Software management with conda
 - Python visualization and ipython widgets
 - Share your results with the world with Binder
