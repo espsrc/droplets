@@ -24,16 +24,26 @@ cd droplets
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash ./Miniconda3-latest-Linux-x86_64.sh -b -p my_conda_env
 rm ./Miniconda3-latest-Linux-x86_64.sh
-source my_conda_env/etc/profile.d/conda.sh 
+source my_conda_env/etc/profile.d/conda.sh
 ```
 ```bash
-conda create env -f environment.yml
-conda activate droplets 
+conda env create -f environment.yml
+conda activate droplets
 jupyter notebook
 ```
 
 ### On MacOS:
-Follow the same steps as above but instead download Miniconda with this command:
+Here are the steps for MacOS:
 ```bash
+git clone https://github.com/spsrc/droplets.git
+cd droplets
 curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
+bash ./Miniconda3-latest-Linux-x86_64.sh -b -p my_conda_env
+rm ./Miniconda3-latest-Linux-x86_64.sh
+source my_conda_env/etc/profile.d/conda.sh
+```
+```bash
+conda env create -f environment.yml
+conda activate droplets
+jupyter notebook
 ```
