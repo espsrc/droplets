@@ -1,4 +1,4 @@
-# droplets
+# Open Science Droplets
 
 This initiative compiles a series of tutorials describing tools and good practices to make your research analysis more organized, automatic and reproducible with an astrophysical science case as a guiding thread.
 

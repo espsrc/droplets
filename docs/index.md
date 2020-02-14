@@ -1,5 +1,5 @@
 
-# Droplets - Reproducible and Collaborative Research Resources for Astronomy
+# Open Science Droplets - Reproducible and Collaborative Research Resources for Astronomy
 
 This initiative compiles a series of tutorials describing tools and good
 practices to make your research analysis more organized, automatic and reproducible with
