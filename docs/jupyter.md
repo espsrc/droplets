@@ -90,5 +90,73 @@ Let's start by creating an empty notebook by selecting the Files tab and clickin
 
 Note that the notebook runs on a python instance (so python is continuously running on the background). You can see that by clicking in the Running tab, where you will see any terminal or notebook running, and you can shutdown them if you want. Note that if you close the notebook instance is equivalent as closing python, so any variables and functions will be lost, so you will need to run the cells again to go back to the processing stage.
 
+If you navigate to gaia_exploratory you will see the notebook jupyter_exploratory.ipynb, which you can check and execute. Note that jupyter will save the contents of a modified file periodically, so you may overwrite the file. To avoid that, you can duplicate the file before editing it.
+
+## The very basics
+Jupyter notebooks are made up out of cells, and you are currently standing in the first cell in your notebook. The fact that it has a green border indicates that it's in "Edit mode", so you can write stuff in it.
+A blue border indicates "Command mode" (see below).
+Cells in Jupyter notebooks can be of two types: markdown or code.
+
+* **Markdown** - These cells contain static material such as captions, text, lists, images and so on. You express this using Markdown, which is a lightweight markup language. Markdown documents are plain text files that can then be converted to other formats for viewing (the document you're reading now is written in Markdown and then converted to HTML). More details in the next section [Some Markdown basics](#some-markdown-basics)
+
+* **Code** - These are the cells that actually do something, just as code chunks do in R Markdown. You can write code in dozens of languages and all do all kinds of clever tricks. You then run the code cell and any output the code generates, such as text or figures, will be displayed beneath the cell. We will get back to this in much more detail, but for now it's enough to understand that code cells are for executing code that is interpreted by a kernel (in this case the Python version in your Conda environment).
+
+Before we continue, here are some shortcuts that can be useful. Note that they are only applicable when in command mode (blue frames). Most of them are also available from the menus.
+These shortcuts are also available from the **Help** menu in your notebook (there's even an option there to edit shortcuts).
+
+* ++enter++: enter Edit mode
+* ++escape++: enter Command mode
+* ++ctrl+enter++: run the cell
+* ++shift+enter++: run the cell and select the cell below
+* ++alt+enter++: run the cell and insert a new cell below
+* ++ctrl+s++: save the notebook
+* ++tab++: for code completion or indentation
+* m/y: toggle between Markdown and Code cells
+* d-d: delete a cell
+* a/b: insert cells above/below current cell
+* x/c/v: cut/copy/paste cells
+* o: toggle output of current cell
+
+## Some Markdown basics
+
+Markdown is easy to use, you can find details on the syntax here [Markdown syntax](https://www.markdownguide.org/basic-syntax/). A nice online resource to practise is [Dillinger](https://dillinger.io/)
+
+Let's use our first cell to create a header. Change the format from
+Code to Markdown in the drop-down list above the cell. Double click on
+the cell to enter editing mode (green frame) and input "# My notebook"
+("#" is used in Markdown for header 1). Run the cell with Shift-Enter.
+Tada!
+
+Markdown is a simple way to structure your notebook into sections with
+descriptive notes, lists, links, images etc.
+
+Below are some examples of what you can do in markdown. Paste all or parts
+of it into one or more cells in your notebook to see how it renders. Make
+sure you set the cell type to Markdown.
+
+```
+## Introduction
+In this notebook I will try out some of the **fantastic** concepts of Jupyter Notebooks. I can even insert a link, follow [here](https://jupyter-notebook.readthedocs.io/en/stable/examples/Notebook/Working%20With%20Markdown%20Cells.html) 
+
+### Markdown basics
+Examples of text attributes are:
+
+* *italics*
+* **bold**
+* `monospace`
+
+I will need some latex here:
+
+\begin{align}
+\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} & = \frac{4\pi}{c}\vec{\mathbf{j}} \\   \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
+\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
+\nabla \cdot \vec{\mathbf{B}} & = 0
+\end{align}
+
+I will insert a very nice image here ![Moon](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Lunar_libration_with_phase_Oct_2007_450px.gif/120px-Lunar_libration_with_phase_Oct_2007_450px.gif)
+
+```
+
+![](images/jupyter_markdown_cell.gif)
 
 
