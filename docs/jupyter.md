@@ -160,7 +160,7 @@ I will insert a very nice image here ![Moon](https://upload.wikimedia.org/wikipe
 ![](images/jupyter_markdown_cell.gif)
 
 
-### Writing code
+## Writing code
 Now let's write some code! Since we chose a Python kernel, Python would be the native language to run in a cell. Enter this code in the second cell and run it:
 
 ```python
@@ -193,9 +193,105 @@ Your notebook should now look something like this.
 
 The focus here is not on how to write Markdown or Python; you can make really pretty notebooks with Markdown and you can code whatever you want with Python. Rather, we will focus on the Jupyter Notebook features that allow you to do a little more than that.
 
-What **is** a Jupyter notebook? Let's look a little at the notebook we're currently working in. Jupyter Notebook saves it every minute or so, so you will already have it available. We can be a little meta and do this from within the notebook itself. We do it by running some shell commands in the third code cell instead of Python code. This very handy functionality is possible by prepending the command with `!`. Try `!ls` to list the files in the current directory.
+## Additional notebook features
 
-Aha, we have a new file called `my_first_notebook.ipynb` or maybe `Untitled.ipynb`. This is our notebook. Look at the first ten lines of the file by using `!head my_first_notebook.ipynb`. Seems like it's just a plain old JSON file. Since it's a text file it's suitable for version control with for example Git, although json is a diffitult format to visualize changes in the file. It turns out that Github and Jupyter notebooks are the best of friends, and Github can render notebooks so you can directly see the cells inputs and outputs as we will see more of later. 
+Here we show some features included in the notebooks to make your life easier. You can find this and more features [here](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
+
+### Talking to the shell
+
+Lastly, code cells also allow you to execute shell commands. This very handy functionality is possible by prepending the command with `!`. Try `!ls -l` in a cell to list the files in the current directory. You can use any of the common shell commands to copy, move, remove, cat, wget, etc.
+
+As an exercise, you can explore contents of files. For example, what **is** a Jupyter notebook? Let's look a little at the notebook we're currently working in. Jupyter Notebook saves it every minute or so, so you will already have it available. Try `!ls` to list the files in the current directory. Aha, we have a new file called `my_first_notebook.ipynb` or maybe `Untitled.ipynb` if you didn't save it before. This is our notebook. Look at the first ten lines of the file by using `!head my_first_notebook.ipynb`. Seems like it's just a plain old JSON file. Since it's a text file it's suitable for version control with for example Git, although json is a diffitult format to visualize changes in the file. It turns out that Github and Jupyter notebooks are the best of friends, and Github can render notebooks so you can directly see the cells inputs and outputs as we will see more of later.
+
+### Magics
+Magics constitute a simple command language that significantly extends the power of Jupyter notebooks. There are two types of magics:
+
+* Line magics - Commands that are prepended by `%`, and whose arguments only extend to the end of the line.
+* Cell magics - Commands that start with `%%` and then applies to the whole cell. Must be written on the first line of a cell.
+
+Now list all available magics with `%lsmagic` (which itself is a magic). You add a question mark to a magic to show the help (e.g. `%lsmagic?`). Some of them act as shortcuts for commonly used shell commands (`%ls`, `%cp`, `%cat`, ..). Others are useful for debugging and optimizing your code (`%timeit`, `%debug`, `%prun`, ..).
+
+For example, you can time the execution of a piece of code to benchmark its performance:
+
+![](images/jupyter_timeit.png)
+
+#### Visualize plots in the notebook
+Python's favorite library for plotting, matplotlib, has its own magic as well: `%matplotlib`. Try out the code below, and you should hopefully get a pretty sine wave.
+
+```python
+%matplotlib inline
+import numpy as np
+import matplotlib.pyplot as plt
+x = np.linspace(0,3*np.pi,100)
+y = np.sin(x)
+fig = plt.figure()
+ax = fig.add_subplot(111)
+line, = plt.plot(x, y, 'r-')
+fig.canvas.draw()
+```
+
+#### Run code from a different kernel
+
+If you want to, you can combine code from multiple kernels into one notebook.
+
+Just use IPython Magics with the name of your kernel at the start of each cell that you want to use that Kernel for:
+
+- `%%bash`
+- `%%HTML`
+- `%%python2`
+- `%%python3`
+- `%%ruby`
+- `%%perl`
+
+
+![](images/jupyter_bash.png)
+
+Do you have really good libraries in Fortran or C that you trust over anything and you don't want to port them to python. Great, Jupyter does not have a problem with that, you can user your functions seamlessly in your notebook cells. For this example you will need to install `pip install -U fortran-magic` and immediately run fortran code in the notebook:
+
+![](images/jupyter_fortran.png)
+
+Imagine the possibilities! You can also include C, perl, ruby code. You can run an interactive example in this [Binder multi-language demo](https://mybinder.org/v2/gh/binder-examples/multi-language-demo/master). Jupyter offers many Kernels to allow third-party interactions, you can see all of them in the [Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels) page. Another good example of use of the C++ library can be found in the [JupyterLab demo](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/try.jupyter.org?urlpath=lab) when you navigate to notebooks > Cpp.ipynb.
+
+#### LaTeX formulas
+
+As we have already seen, you can write formulas using the markdown cells. When you write LaTeX in a Markdown cell, it will be rendered as a formula using MathJax. Note that MathJax is a javascript program to render formulas but it will not have by default all the power of a full LaTeX installation.
+
+This:
+
+`$P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$`
+
+becomes this:
+
+$P(A \mid B) = \frac{P(B \mid A)P(A)}{P(B)}$
+
+
+#### Capture 
+
+A very useful magic, in particular when using shell commands a lot in your work, is `%%capture`. This will capture the stdout/stderr of any code cell and store them in a Python object. Run `%%capture?` to display the help and try to understand how it works. Try it out with either some Python code, other magics or shell commands.
+
+```no-highlight
+%%capture output
+%%bash
+echo "Print to stdout"
+echo "Print to stderr" >&2
+```
+
+and in another cell
+
+```python
+print("stdout:" + output.stdout)
+print("stderr:" + output.stderr)
+```
+
+
+!!! tip
+    The `%matplotlib inline` and `%config InlineBackend.figure_format = 'svg'` line
+    magics are only required once per notebook. You could for instance
+    add them to the first cell where you import matplotlib for plotting.
+
+
+
+
 
 !!! note "Quick recap"
     In this section we've learned:
