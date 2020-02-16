@@ -7,7 +7,6 @@ nav:
     - Home: index.md
     - Quick Start: quickstart.md
     - Jupyter notebooks: jupyter.md
-    - Jupyter notebooks: jupyter2.md
     - Collaborative science online, Github: github.md
     - Version control with git: git.md
     - Software management with conda (TBD): conda.md
