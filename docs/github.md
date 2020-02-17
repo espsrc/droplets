@@ -3,10 +3,10 @@
 You have received an e-mail from a good colleague.
 
 
-!!! note "email"
+!!! note "email from Galileo"
     Hi again!
 
-    Thanks a lot for sending me the notebook you prepared, but actually I cannot open it. How can I do that? Also, I will be travelling during the following days, if you could send me something I can explore from my mobile phone, that would be great!
+    Thanks a lot for sending me the Jupyter notebook you prepared, but actually I cannot open it. How can I do that? Also, I will be travelling during the following days, if you could send me something I can explore from my mobile phone, that would be great!
 
     Cheers,
 
@@ -16,166 +16,146 @@ You have received an e-mail from a good colleague.
 We need to compile all our results and send them in a format that helps
 understanding the process and the results of our analysis. One common approach
 is to describe all the details in the body of the e-mail and send different
-figures as attachments. This is a poor approach that complicate visualization,
+figures as attachments. This is a poor approach that complicates visualization,
 makes it difficult to connect description and figures, and that probably will
-miss details on how the results were obtained. Alternatively we can generate a
-document with the content that we can then convert to pdf so it is easy to send
-and be opened by anyone. However, using a Jupyter notebook has several
+miss details on how the results were obtained. Alternatively, we can generate a
+.doc document with descriptions, plots and comments that we can then convert to
+pdf that anybody can open, but .docs files are difficult to update.  The
+alternative we propose it using a Jupyter notebook, which has several
 advantatges:
 
 - It is easy to export as pdf or html, and can be visualized in nearly any platform.
 - It naturally contains the results and the logic followed to obtain them, as already seen in the previous [chapter](docs/jupyter)
-- It is immediate to generate them if an update is needed.
-- It explicitly show the full process used at each step.
+- You can seamlessly match explanations, code and results in a continuous narrative.
+- You can easily update them, add or remove content or make small changes.
+- It *explicitly* shows the full process used at each step.
 
 <h3>Objectives and scope</h3>
 
 In this section we will show how to use Github to share results with the community or your colleagues. You will be able to share code, text documents, figures or notebooks, which can be rendered automatically.
 
 
+- Start an account
+- Start a repo (Description, README, LICENSE)
+- Upload files
+- Make changes to file and commits
+- View differences
+- 
 
 
-# How Github works
+# What is Github and how does it work
 
-## Code, history, issues
+GitHub is a code hosting platform for version control and collaboration. It
+lets you and others work together on projects from anywhere. Developing your
+project or analysis collaboratively on GitHub or GitLab provides a prompter to
+document your work in detail and it provides a great opportunity to get
+additional contributors to your idea. Contributions can be everything from new
+ideas, to bug reports and actual code contributions.
 
-...
-...
+The platform uses version control via git, so you will have a complete history
+of all the changes for all the files, and when and who commited those changes.
+So no more files ending with `_v2_final_reviewed_Feb_finalfinal.pdf`.
+Additionally, you have an issue tracker to focus discussions on specific topics
+easy, a build-in wiki, and even space to host web pages. For the moment, we
+will focus on the specific features to solve the particular problem exposed in
+this section: we need to share a document with a collaborator.
 
-### What is GitHub 
-[origin](https://guides.github.com/activities/hello-world/)
-
-GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-### Why this is useful
- [origin](https://the-turing-way.netlify.com/collaborating_github/collaborating_github.html#why-this-is-useful)
-
-Developing your project or analysis collaboratively on GitHub or GitLab
-provides a prompter to document your work in detail and it provides a great
-opportunity to get additional contributors to your idea. Contributions can be
-everything from new ideas, to bug reports and actual code contributions.
+There are different platforms that can be used in a very similar way. We
+recommend that you take a look at [Gitlab](https://about.gitlab.com/), and
+[Bitcucket](https://bitbucket.org/product/). Here we will focus specifically in
+a Github example, but most of the instructions and ways of working are almost
+the same for the other platforms.
 
 
-### README and project communication
+# Share your work with a collaborator
 
-[origin](https://the-turing-way.netlify.com/collaborating_github/1/readme_communication.html#readme-and-project-communication)
+## Make an account
 
-README files are the welcome mat for your project. They are the first thing new visitors to your project will see and thus are part of a set of really important documents to make potential contributors feel welcome and invite them to get involved. Your README file should cover:
+Just navigate to the [main page](https://github.com/) and you will be prompted
+to Sign up in Github. Just enter your username, email and password. The
+username will be used to identify you and also it will be used as home path for
+all your repositories. Your email will be private. 
+
+## Initialize a repository
+
+A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs. 
+
+- In the upper right corner, next to your avatar or identicon, click + and then select **New repository**. Name your repository, for example `test`.
+- Write a short description of the purpose of this repository. You can write or change it later. For example: "This project is to share files with my collaborator"
+- You can choose if you want to make it Public or Private. Public repos will be searchable by anyone, so the whole community will be able to access the files, comments, etc. Private repos will only be available to the users you explicitly invite.
+
+!!! warning
+    Github now offers unlimited private repositories, but those are limited to **three collaborators**. If that is not enough for you, we recommend using Gitlab (see a [comparison](https://about.gitlab.com/blog/2019/01/07/github-offering-free-private-repos-for-up-to-three-collaborators/))
+
+- Select Initialize this repository with a README (see next section).
+- Add a license. If in doubt read section below or select `GNU General Public License v3.0`.
+- Add .gitignore: not very relevant now, but if it is a python-based project, select `Python`.
+
+And you are good to go!
+
+You will immediately see your repository located at `https://github.com/<username>/<reponame>`. You will see this:
+
+![](images/github_new_repo.png)
+
+You can navigate to the available files: .gitignore, LICENSE and README.md.
+
+
+## Write a README file (make and commit changes)
+
+It is always a good idea to have a README.md file in each repository, it will be useful for yourself and any visitor to know the details about the repository. README files are the welcome mat for your project. They are the first thing new visitors to your project will see and thus are part of a set of really important documents to make potential contributors feel welcome and invite them to get involved. Your README file should cover:
 
  - What you are doing, for who, and why.
  - What makes your project special and exciting.
  - How to get started.
- - Where to find key resources.
+ - Where to find key resources
 
-### Roadmapping
+We will practise how to make changes to a file with the README.md file.
 
-[origin](https://the-turing-way.netlify.com/collaborating_github/2/roadmapping.html)
-
-If you plan a larger piece of work, it is very useful to have an outline for the work you need to do and share it with potential contributors. Your roadmap covers your goal and vision and should include a timeline for tasks that need to be completed, thus helping anyone new to your project to develop an understanding of what is currently happening on the project and what’s coming next. A roadmap is also a great tool to highlight dependencies among tasks, helping you to schedule work on them efficiently. Also milestones can be really helpful to get to your main goal. 
-
-If you work on GitHub, you can use [GitHub’s Project board](https://help.github.com/en/github/managing-your-work-on-github/tracking-the-progress-of-your-work-with-project-boards) to manage tasks and issues.
-
-
-## Hello Word tutorial 
-
-[origin](https://guides.github.com/activities/hello-world/)
-
-Following the steps above you will learn how to:
-
-- Create and use a repository
-- Start and manage a new branch
-- Make changes to a file and push them to GitHub as commits
-- Open and merge a pull request
-
-### Step 1: Create a repository 
-
-A repository is usually used to organize a single project. Repositories can contain folders and files, images, videos, spreadsheets, and data sets – anything your project needs. We recommend including a README, or a file with information about your project. GitHub makes it easy to add one at the same time you create your new repository. It also offers other common options such as a license file.
-
-**To create a new repository**
-
-In the upper right corner, next to your avatar or identicon, click + and then select **New repository**.
-Name your repository hello-world.
-Write a short description.
-Select Initialize this repository with a README.
-
-Click **Create repository**.
-
-### Step 2. Create a Branch
-
-Branching is the way to work on different versions of a repository at one time.
-
-By default your repository has one branch named ```master``` which is considered to be the definitive branch. We use branches to experiment and make edits before committing them to ```master```.
-
-When you create a branch off the ```master``` branch, you’re making a copy, or snapshot, of ```master``` as it was at that point in time. If someone else made changes to the ```master``` branch while you were working on your branch, you could pull in those updates.
-
-This diagram shows:
-
-- The ```master``` branch
-- A new branch called ```feature``` (because we’re doing ‘feature work’ on this branch)
-- The journey that ```feature``` takes before it’s merged into master
-
-Have you ever saved different versions of a file? Something like:
-
-- ```story.txt```
-- ```story-joe-edit.txt```
-- ```story-joe-edit-reviewed.txt```
-Branches accomplish similar goals in GitHub repositories.
-
-Branches are used for keeping bug fixes and feature work separate from our ```master``` (production) branch. When a change is ready, then you can merge your branch into ```master```.
-
-
-**To create a new branch**
-
-Go to your new repository ```hello-world```.
-Click the drop down at the top of the file list that says **branch: master**.
-Type a branch name, ```readme-edits```, into the new branch text box.
-Select the blue **Create branch** box or hit “Enter” on your keyboard.
-
-Now you have two branches, ```master``` and ```readme-edits```. They look exactly the same, but not for long! Next we’ll add our changes to the new branch.
-
-
-### Step 3. Make and commit changes
-Bravo! Now, you’re on the code view for your ```readme-edits branch```, which is a copy of ```master```. Let’s make some edits.
+- Click the ```README.md``` file. You will se the rendered version of the Markdown file.
+- Click the pencil icon in the upper right corner of the file view to edit. You will see the plain-text Markdon file. You can use all the markdown syntax features we saw in [Some Markdown basics](jupyter.md#some-markdown-basics). Write some more details about the repository, at leas a few separate lines. Also, remove some of the existing lines.
+- Commit your changes so the file is actually modified. You can change the master branch (default) as we are not using other branches now.
 
 On GitHub, saved changes are called **commits**. Each commit has an associated commit message, which is a description explaining why a particular change was made. **Commit** messages capture the history of your changes, so other contributors can understand what you’ve done and why.
 
-**Make and commit changes**
+## Check what changes have happened
 
-Click the ```README.md``` file.
-Click the pencil icon in the upper right corner of the file view to edit.
-In the editor, write a bit about yourself.
-Write a commit message that describes your changes.
-Click **Commit** changes button.
+First, go back to the repository by clicking on its name on the top of the
+page. You will see that the README file now contains your changes. If you see
+the "commits" section now should contain at least 2 (the initial commit when
+you created the files in the repository, and the change you just commited).
+Click on the `commits` section. You will see a list with the full history of
+changes (commits) in your repository. A commit may contain changes from several
+files. Click on the name of the first commit (or in the 7-letter code on the
+right). You will see a `diff` view of the file, showing exactly which lines
+were added, which were removed and which words were changed. Maybe your file
+does not suffered significant changes, you can see a random example of a commit
+[here](https://github.com/numpy/numpy/commit/ca1b13224ba397ac3f77f48c899e2adcea1de5db).
 
-These changes will be made to just the README file on your ```readme-edits``` branch, so now this branch contains content that’s different from ```master```.
+## Add new files - share your Jupyter notebook
 
-### Step 4. Open a Pull Request
-Nice edits! Now that you have changes in a branch off of master, you can open a **pull request**.
+The purpose of this repository was to share files with external collaborators.
+Go back to the home page of your repository. On the right, before the list of
+files you will see a menu with "Create new file", "Upload files" and "Find
+file". Click on "Upload files" and find a file you would like to upload (note
+that if your repository is public, any file you upload will be visible by
+anyone).
 
-Pull Requests are the heart of collaboration on GitHub. When you open a **pull request**, you’re proposing your changes and requesting that someone review and pull in your contribution and merge them into their branch. Pull requests show **diffs**, or differences, of the content from both branches. The changes, additions, and subtractions are shown in green and red.
+Upload a Jupyter notebook. If you don't have any, you can upload the notebook
+from the previous session, that you can find
+[here](https://raw.githubusercontent.com/spsrc/droplets/master/gaia_exploratory/jupyter_exploratory.ipynb) or download it from a terminal with:
 
-As soon as you make a commit, you can open a pull request and start a discussion, even before the code is finished.
+```bash
+wget https://raw.githubusercontent.com/spsrc/droplets/master/gaia_exploratory/jupyter_exploratory.ipynb
+```
 
-By using GitHub’s [@mention system](https://help.github.com/en/github/writing-on-github/about-writing-and-formatting-on-github#text-formatting-toolbar) in your pull request message, you can ask for feedback from specific people or teams, whether they’re down the hall or 10 time zones away.
+Upload the file from your computer, write a commit message describing what you have done, and if you want update the README.md file to explain that the notebook is now available in the repository.
 
-You can even open pull requests in your own repository and merge them yourself. It’s a great way to learn the [GitHub flow](https://guides.github.com/introduction/flow/) before working on larger projects.
+The uploaded files will show in the home page of the repository. If you navigate the the .ipynb file Github will render the contents for you. If you share that path to your collaborators, they will be able to see your analysis!
 
-**Open a Pull Request for changes to the README**
+# Conclusions
 
-- Click the  **Pull Request** tab, then from the Pull Request page, click the green **New pull request** button.
-- In the **Example Comparisons** box, select the branch you made, ```readme-edits```, to compare with master (the original).
-- Look over your changes in the **diffs** on the Compare page, make sure they’re what you want to submit.
-- When you’re satisfied that these are the changes you want to submit, click the big green **Create Pull Request** button.
-- Give your pull request a title and write a brief description of your changes.
+With this information you can maintain a repository with the files you need for your research, including text files, notebooks, pdfs, images, etc. Github is not the right place to keep heavy files (limit is 10MB) or data. You can keep the files and notes for each project in a different repository if you want. At the minimum, you will always have a backup of all the relevant files.
 
-When you’re done with your message, click **Create pull** request!
-
-### Step 5. Merge your Pull Request
-
-In this final step, it’s time to bring your changes together – merging your ```readme-edits``` branch into the ```master``` branch.
-
-- Click the green **Merge pull request** button to merge the changes into ```master```.
-- Click **Confirm merge**.
-- Go ahead and delete the branch, since its changes have been incorporated, with the **Delete branch** button in the purple box.
+This works well with a reduced number of collaborators, but it is also a good idea to use features like branches that allow you to work on a specific change or feature without disturbing the master branch. Once you are happy with the modification implemented in a particular branch, you can `merge` it with the master branch. We recommend you follow the [Hello World](https://guides.github.com/activities/hello-world/) example in the Github Guides. In the next section we will work on how to use the command-line tool `git` to manage all this changes and synchronize the contents of the Github webpage in your local computer.
 
 
