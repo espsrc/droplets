@@ -1,0 +1,6 @@
+
+name: session-03
+
+dependencies:
+ - python
+ - jupyterlab
