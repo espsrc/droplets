@@ -10,27 +10,27 @@ an astrophysical science case as a guiding thread.
 
 We understand that people will learn a tool only when they need it or they see
 the value on using it. Therefore, the tutorials follow the narrative of
-presenting tools after a scientific necessity appears, such as the necessity to
-share your work with colleagues or when you need to manage the dependencies of
+presenting tools after a scientific necessity appears, such as the one to
+share your work with colleagues, to train a new member in your team, or when you need to manage the dependencies of
 some software you need.
 
-Following this philosophy, instead of presenting a complex system to organize full reproducibily at once, we will be progressively incorporating new approaches as they respond to new necessities we encounter. The topics covered here are:
+Following this philosophy, we will aim towards full reproducibility following a simple system, by progressively incorporating new approaches as they respond to new necessities we encounter. The topics to cover include:
 
-- Jupyter: the XXI century lab book
-- Collaborative Jupyter notebooks through git
-- Software management with conda
-- Python visualization and ipython widgets
-- Share your results with the world with Binder
+- Jupyter notebook: the XXI century lab book
+- Collaborative science using Github
+- Keep your software organized with Conda
+- Python interactive visualization
+- Share your results with the World with Binder
 - Reproducible workflows to rule them all: Snakemake
-- Contairenization for the posterit
-- Your work for the posterity. Zenodo
+- Fill your containers with software: Docker and Singularity 
+- Your work for posterity: Zenodo
 
 
 This documentation and all the resources used in the course are available in the github repository [droplets](https://github.com/spsrc/droplets)
 
 
 
-# The authors
+# Contributors
 
 Javier Moldón, Sebastián Luna and Laura Darriba, from the [Institute of Astrophysics of Andalusia](https://www.iaa.csic.es/) (IAA-CSIC), a [Severo Ochoa Center](http://so.iaa.csic.es/).
 

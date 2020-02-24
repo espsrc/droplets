@@ -37,7 +37,6 @@ conda activate droplets
 jupyter notebook
 ```
 
-
 ### On MacOS:
 Here are the steps for MacOS. The only difference is the Miniconda version to download.
 ```bash
@@ -58,6 +57,12 @@ conda env create -f environment.yml
 conda activate droplets
 jupyter notebook
 ```
+Now navigate to the ```gaia_exploratory``` folder
+
+![](images/quickstart_navigatenotebook_1.png)
+and to the ```jupyter_exploratory.ipynb``` 
+
+![](images/quickstart_navigatenotebook_2.png)
 
 ### Comming back in the future
 
