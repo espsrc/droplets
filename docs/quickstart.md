@@ -58,9 +58,11 @@ conda activate droplets
 jupyter notebook
 ```
 Now navigate to the ```gaia_exploratory``` folder
-![]/images/quickstart_naviagtenotebook_1.png
+
+![](images/quickstart_navigatenotebook_1.png)
 and to the ```jupyter_exploratory.ipynb``` 
-![]/images/quickstart_naviagtenotebook_2.png
+
+![](images/quickstart_navigatenotebook_2.png)
 
 ### Comming back in the future
 
