@@ -18,7 +18,12 @@ Starting a collaboration by sharing code and analysis by e-mail can be a mess. M
 
 <h3>Objectives and scope</h3>
 
-....
+In this section we will show how to use Git for version control and for collaboration with your colleagues. You will be able to track the changes of all the files in your project with a complete history so that you can recall specific versions later (continuous incremental backup). You will be able also to work in parallel with your collaborators in individual developments through "branching" and lately work back together with "merging", verying that the changes on each branch do not conflict.
+
+- Make changes to files in your project
+- Track changes to files in your project 
+- Revert changes by recovering an specific previous version
+- ... 
 
 
 # Introduction to Git
