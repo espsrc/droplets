@@ -62,7 +62,7 @@ jupyter notebook
 Now navigate to the ```gaia_exploratory``` folder
 
 ![](images/quickstart_navigatenotebook_1.png)
-and open the ```jupyter_exploratory.ipynb``` 
+and open the exploratory Gaia analysis```jupyter_exploratory.ipynb``` 
 
 ![](images/quickstart_navigatenotebook_2.png)
 
