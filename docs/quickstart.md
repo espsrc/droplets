@@ -57,10 +57,12 @@ conda env create -f environment.yml
 conda activate droplets
 jupyter notebook
 ```
+
+### Navigate through the Jupyter notebook:
 Now navigate to the ```gaia_exploratory``` folder
 
 ![](images/quickstart_navigatenotebook_1.png)
-and to the ```jupyter_exploratory.ipynb``` 
+and open the ```jupyter_exploratory.ipynb``` 
 
 ![](images/quickstart_navigatenotebook_2.png)
 
