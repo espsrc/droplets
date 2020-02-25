@@ -25,7 +25,7 @@ alternative we propose it using a Jupyter notebook, which has several
 advantatges:
 
 - It is easy to export as pdf or html, and can be visualized in nearly any platform.
-- It naturally contains the results and the logic followed to obtain them, as already seen in the previous [chapter](docs/jupyter)
+- It naturally contains the results and the logic followed to obtain them, as already seen in the previous [chapter](jupyter.md)
 - You can seamlessly match explanations, code and results in a continuous narrative.
 - You can easily update them, add or remove content or make small changes.
 - It *explicitly* shows the full process used at each step.
@@ -40,7 +40,7 @@ In this section we will show how to use Github to share results with the communi
 - Upload files
 - Make changes to file and commits
 - View differences
-- 
+- Share your work 
 
 
 # What is Github and how does it work
