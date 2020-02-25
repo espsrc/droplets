@@ -10,12 +10,12 @@ nav:
     - Collaborative science online, Github: github.md
     - Version control with git: git.md
     - Software management with conda (TBD): conda.md
-    - Python visualization and ipython widgets (TBD): interactive.md
+    - Python interactive visualization (TBD): interactive.md
     - Binder (TBD): binder.md
     - Snakemake (TBD): snakemake.md
     - Containers (TBD): containers.md
     - Reproducibility examples (TBD): reproducibility.md
-    - Testing: science.md
+      #    - Testing: science.md
 
 #theme: 'material' # Excellent searcher. Too clear. Hard to find subsections
 #theme: windmill    # Very good search bar. Clean navigation

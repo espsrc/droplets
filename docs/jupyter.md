@@ -6,7 +6,7 @@ You have received an e-mail from a good colleague.
 !!! note "email from Galileo"
     Hi!
     
-    The other day my friend Ptolemy told me about a "nebulous mass in the breast of Cancer"[1]. I observed it with my new telescope and I could resolve about 40 individual stars! This is amazing, and it could be a good topic for a paper. If you have time, please see if you can find anything interesting in this region. 
+    The other day my friend Ptolemy told me about a "nebulous mass in the breast of Cancer"[1]. I observed it with my new telescope and I could resolve about 40 individual stars! This is amazing, and it could be a good topic for a paper. Please, do a first exploratory analysis of the region and see what you can find.
  
     R.A. 130.025 deg  
     Dec. 19.9833 deg
@@ -44,9 +44,11 @@ The Jupyter Notebook is an open-source web application that allows you to create
 An excellent question! Some applications could be:
 
 * Python is lacking a really good IDE for doing exploratory scientific data analysis, like RStudio or Matlab. Some people use it simply as an alternative for that.
+* An early ambition with Jupyter notebooks was to be analogous to the lab notebook used in a wet lab. It would allow the scientist to document her day-to-day work and interweave results, ideas, and hypotheses with the code. From a reproducibility perspective, this is one of the main advantages.
+* Jupyter notebooks can be used to provide a tighter connection between your data and your results by integrating results of computations with the code that generated them. They can also do this in an interactive way that makes them very appealing for sharing with others.
+* Notebooks are great tools for teaching. It is common now to share lecture materials for training schools as notebooks (see examples in the [Resources](#other-resources) section)
 * The community around Jupyter notebooks is large and dynamic, and there are tons of tools for sharing, displaying or interacting with notebooks.
-* An early ambition with Jupyter notebooks, and its predecessor IPython notebooks, was to be analogous to the lab notebook used in a wet lab. It would allow the data scientist to document her day-to-day work and interweave results, ideas, and hypotheses with the code. From a reproducibility perspective, this is one of the main advantages.
-* Jupyter notebooks can be used, just as R Markdown, to provide a tighter connection between your data and your results by integrating results of computations with the code that generated them. They can also do this in an interactive way that makes them very appealing for sharing with others.
+* In a research team, notebooks can be used to train new people on the methods and types of analysis used in your field.
 
 As always, the best way is to try it out yourself and decide what to use it for!
 
@@ -303,3 +305,10 @@ print("stderr:" + output.stderr)
     * A Jupyter notebook is simply a text file in JSON format.
 
 
+# Other resources
+
+- Jake VanderPlas youtube series on Reproducible data analysis with jupyter [Youtube](https://www.youtube.com/playlist?list=PLYCpMb24GpOC704uO9svUrihl-HY1tTJJ)
+- Try Jupyter in your browser [link](https://jupyter.org/try)
+- Quickview Notebook sharing the Gravitational Wave detection [Notebook](https://github.com/losc-tutorial/quickview/blob/master/index.ipynb)
+- A full Machine Learning course using Notebooks, for example [Lecture 1: Density Estimation](https://github.com/carmensg/IAA_School2019/blob/master/lectures/Day3-ZeljkoIvezic/notebooks/density_estimation.ipynb), [Lecture 3: Classification](https://github.com/carmensg/IAA_School2019/blob/master/lectures/Day3-ZeljkoIvezic/notebooks/classification.ipynb) and [Lecture 4: Dimensionality Reduction](https://github.com/carmensg/IAA_School2019/blob/master/lectures/Day3-ZeljkoIvezic/notebooks/dimensionality_reduction.ipynb).
+- Another example of the full tutorial contents on an international Python conference: [PyCon 2015 Scikit-learn Tutorial](https://github.com/jakevdp/sklearn_pycon2015)

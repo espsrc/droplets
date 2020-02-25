@@ -6,7 +6,7 @@ You have received an e-mail from a good colleague.
 !!! note "email from Galileo"
     Hi again!
 
-    Thanks a lot for sending me the Jupyter notebook you prepared, but actually I cannot open it. How can I do that? Also, I will be travelling during the following days, if you could send me something I can explore from my mobile phone, that would be great!
+    Thanks for sending me the notebook you prepared but I cannot open it. How can I see it? Also, I will be travelling during the following days, if you could send me something I can explore from my mobile phone, that would be great!
 
     Cheers,
 
@@ -14,34 +14,39 @@ You have received an e-mail from a good colleague.
 
 
 We need to compile all our results and send them in a format that helps
-understanding the process and the results of our analysis. One common approach
-is to describe all the details in the body of the e-mail and send different
-figures as attachments. This is a poor approach that complicates visualization,
-makes it difficult to connect description and figures, and that probably will
-miss details on how the results were obtained. Alternatively, we can generate a
-.doc document with descriptions, plots and comments that we can then convert to
-pdf that anybody can open, but .docs files are difficult to update.  The
-alternative we propose it using a Jupyter notebook, which has several
+understanding the process and the results of our analysis. One common and
+terrible approach would be to describe the details and results in the body of
+the e-mail and send different figures as attachments. This is a poor approach
+that complicates visualization, makes it difficult to connect description with
+figures, and that probably will miss details on how the results were obtained.
+Alternatively, we could generate a .doc document with comments and plots and
+send it as a pdf, but docs are difficult to update and hard to put together.
+
+The alternative we propose to use a Jupyter notebook, which has several
 advantatges:
 
 - It is easy to export as pdf or html, and can be visualized in nearly any platform.
+- It can be easily shared and visualized in Github.
 - It naturally contains the results and the logic followed to obtain them, as already seen in the previous [chapter](jupyter.md)
 - You can seamlessly match explanations, code and results in a continuous narrative.
 - You can easily update them, add or remove content or make small changes.
-- It *explicitly* shows the full process used at each step.
+- It can *explicitly* show the full process of your science.
+
+You can even write whole books in Github (see [Other resources](#other-resources)
+
 
 <h3>Objectives and scope</h3>
 
 In this section we will show how to use Github to share results with the community or your colleagues. You will be able to share code, text documents, figures or notebooks, which can be rendered automatically.
 
-
 - Start an account
-- Start a repo (Description, README, LICENSE)
+- Start a repository (Description, README, LICENSE)
 - Upload files
-- Make changes to file and commits
-- View differences
-- Share your work 
+- Make changes to file and commit them
+- View differences and history
+- Share your work! 
 
+We will use [Github](https://github.com/), but there are other platforms that offer very similar services and work in almost the same way. We recommend you take a look at [Gitlab](https://about.gitlab.com/), and [Bitcucket](https://bitbucket.org/product/) as perfectly viable alternatives. 
 
 # What is Github and how does it work
 
@@ -59,12 +64,6 @@ Additionally, you have an issue tracker to focus discussions on specific topics
 easy, a build-in wiki, and even space to host web pages. For the moment, we
 will focus on the specific features to solve the particular problem exposed in
 this section: we need to share a document with a collaborator.
-
-There are different platforms that can be used in a very similar way. We
-recommend that you take a look at [Gitlab](https://about.gitlab.com/), and
-[Bitcucket](https://bitbucket.org/product/). Here we will focus specifically in
-a Github example, but most of the instructions and ways of working are almost
-the same for the other platforms.
 
 
 # Share your work with a collaborator
@@ -152,10 +151,23 @@ Upload the file from your computer, write a commit message describing what you h
 
 The uploaded files will show in the home page of the repository. If you navigate the the .ipynb file Github will render the contents for you. If you share that path to your collaborators, they will be able to see your analysis!
 
+### Additional features with branches
+
+This approach works well with a reduced number of collaborators, but it is also a good idea to use features like branches that allow you to work in parallel on new changes, developments and versions without disturbing the master (stable) branch. Once you are happy with the modification implemented in a particular branch, you can `merge` it with the master branch. We recommend you follow the [Hello World](https://guides.github.com/activities/hello-world/) example in the Github Guides. In the next [section](git.md) we will work on how to use the command-line tool `git` to manage all these changes and synchronize the contents of the Github webpage with your local computer.
+
 # Conclusions
 
-With this information you can maintain a repository with the files you need for your research, including text files, notebooks, pdfs, images, etc. Github is not the right place to keep heavy files (limit is 10MB) or data. You can keep the files and notes for each project in a different repository if you want. At the minimum, you will always have a backup of all the relevant files.
+With this information you can maintain a repository with the files you need for your research, including text files, notebooks, pdfs, images, etc. Github is not the right place to keep heavy files (limit is 100MB) or data. You can keep the files and notes for each project in a different repository if you want. At the minimum, you will always have a backup of all the relevant files with a detailed history of all versions you produced.
 
-This works well with a reduced number of collaborators, but it is also a good idea to use features like branches that allow you to work on a specific change or feature without disturbing the master branch. Once you are happy with the modification implemented in a particular branch, you can `merge` it with the master branch. We recommend you follow the [Hello World](https://guides.github.com/activities/hello-world/) example in the Github Guides. In the next section we will work on how to use the command-line tool `git` to manage all this changes and synchronize the contents of the Github webpage in your local computer.
+If you share the link to the notebook with collaborators, they should see the rendered version of the notebook, like this:
 
+[Exploratory analysis of Gaia data](https://github.com/spsrc/droplets/blob/master/gaia_exploratory/jupyter_exploratory.ipynb)
 
+This can be opened from any browser, including mobile phones with very good quality.
+
+# Other resources
+
+- You can even write books on Github! For example [Full book](https://jakevdp.github.io/PythonDataScienceHandbook/) and the Github [repository](https://github.com/jakevdp/PythonDataScienceHandbook).
+- You can even write papers on Github! [Mutiband Lomb-Scargle Periodograms](http://jakevdp.github.io/multiband_LS/). In this example, the author even received feedback from a world expert on the topic as a Github [issue](https://github.com/jakevdp/multiband_LS/issues/1) while writing the paper. Check this talk explaining the experience [In Defense of Extreme Openness](https://zenodo.org/record/49577)
+- To learn more: [Github Guides](https://guides.github.com/)
+- You can also write and host your personal webpage in Github: [examples](https://github.com/topics/personal-website)
