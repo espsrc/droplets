@@ -40,7 +40,7 @@ In this section we will show how to use Github to share results with the communi
 - Upload files
 - Make changes to file and commits
 - View differences
-- 
+- Share your work 
 
 
 # What is Github and how does it work
