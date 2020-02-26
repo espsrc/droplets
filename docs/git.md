@@ -3,17 +3,19 @@
 You have received an e-mail from a good colleague.
 
 
-!!! note "email" 
+!!! note "email from Galileo" 
     Hey there,
 
-    Thanks for sharing the notebook with your exploratory analysis, the results are really promising! I have some code of my own to compute some statistics. I attached the last version of my program in this e-mail. I think the last version compiled well (I hope) but you may need some dependencies I have in my laptop. I think we can collaborate and do a more in-depth analysis together. Please, send me your current results and I will continue from there. [need some reworking]
+    Thanks for sharing the notebook with your exploratory analysis, the results are really promising! I have some code of my own to compute statistics. I attach it in this e-mail, I think this version compiled well (I hope).
+
+    We can collaborate and do a more in-depth analysis together. How can we proceed?
 
     Cheers,
 
     Galileo
 
 
-Starting a collaboration by sharing code and analysis by e-mail can be a mess. Most probably, a number of unconnected files, with different versions will appear, and tracking versions and stages will become more a more complicated. We need a tool that help us organize all our files, and make it simple and immediate to share exactly the same files with all your collaborators
+Starting a collaboration by sharing code and analysis by e-mail can be a mess. Most probably, a number of unconnected files, with different versions will appear, and tracking versions and stages will become more a more complicated as the project progresses. We need a tool that help us organize all our files, and make it simple and immediate to share exactly the same files with all your collaborators
 
 
 <h3>Objectives and scope</h3>

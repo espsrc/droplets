@@ -26,7 +26,7 @@ Following this philosophy, we will aim towards full reproducibility following a 
 - Your work for posterity: Zenodo
 
 
-This documentation and all the resources used in the course are available in the github repository [droplets](https://github.com/spsrc/droplets)
+This documentation and all the resources used in the course are available in the Github repository [droplets](https://github.com/spsrc/droplets)
 
 
 
@@ -37,7 +37,7 @@ Javier Moldón, Sebastián Luna and Laura Darriba, from the [Institute of Astrop
 We are open to contributions from anyone! Visit the Github repository  [Droplets](https://github.com/spsrc/droplets).
 
 # Credits
-This content is based on our own experience and on excellent open-source online material. We want to mention specially:
+This content is based on our own experience and different excellent open-source online material. We want to mention especially:
 
 [NBIS Reproducible research course](https://nbis-reproducible-research.readthedocs.io/en/latest/)  
 [The Turing Way](https://the-turing-way.netlify.com/introduction/introduction)

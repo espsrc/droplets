@@ -3,7 +3,7 @@
 Each chapter will have some notes on how to install the software required to
 follow the examples. Here we explain how to simplify the process by having a
 working environment with all the dependencies with a few lines of code.
-Alternatively, with a single click you can just deploy a ready-to-work virtual
+Alternatively, with a single click, you can just deploy a ready-to-work virtual
 machine with Binder.
 
 ## Execute online (Binder)
@@ -15,7 +15,7 @@ For a completely hassle-free experience just follow the link below! [Binder](htt
 
 ## Execute on your local machine
 
-You need to download the [droplets](https://github.com/spsrc/droplets) repository from Github and to have a working conda installation. If you don't have a conda environment on your system, this will create a temporary conda installation called `my_conda_env` in the droplets directory. This will not interfere with any installation on your system, and removing it is as simple as deleting the `my_conda_env` directory. More information at [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+You need to download the [droplets](https://github.com/spsrc/droplets) repository from Github and to have a working [conda](https://docs.conda.io/en/latest/) installation. If you don't have a conda environment on your system, this will create a temporary conda installation called `my_conda_env` in the droplets directory. This will not interfere with any installation on your system, and removing it is as simple as deleting the `my_conda_env` directory. More information at [miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
 ### On Linux:
 
@@ -66,7 +66,7 @@ and open the exploratory Gaia analysis```jupyter_exploratory.ipynb```
 
 ![](images/quickstart_navigatenotebook_2.png)
 
-### Comming back in the future
+### Coming back in the future
 
 If you want to come back and continue an analysis at a later time you don't need to repeat all the installation steps. Just go to the droplets folder and run:
 

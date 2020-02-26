@@ -17,17 +17,17 @@ You have received an e-mail from a good colleague.
 
     [1] Claudius Ptolemy, Almagest, AD 100-170 (see [V/61](https://ui.adsabs.harvard.edu/abs/1987BICDS..33..125J/abstract))
 
-You think it would be a good idea to explore the stellar population on this area. Because you are not sure what to expect you would like to try different approaches, so you decide to start a Jupyter notebook and explore a star catalog around those coordinates...
+You think it would be a good idea to explore the stellar population in this area. Because you are not sure what to expect you would like to try different approaches, so you decide to start a Jupyter notebook and explore a star catalogue around those coordinates...
 
 <h3>Objectives and scope</h3>
 
-In this section we will see the value of Jupyter notebooks as a dynamic tool for exploratory analysis. We will learn how to initialize and navigate through notebooks, the basic structure and syntax to use a Jupyter notebook, the notebook cells and the Magic commands. As an example, we will do an exploratory analysis of a star population from the *[Gaia](https://sci.esa.int/web/gaia)* catalog.
+In this section, we will see the value of Jupyter notebooks as a dynamic tool for exploratory analysis. We will learn how to initialize and navigate through notebooks, the basic structure and syntax to use a Jupyter notebook, the notebook cells and the Magic commands. As an example, we will do an exploratory analysis of a star population from the *[Gaia](https://sci.esa.int/web/gaia)* catalogue.
 
 If you want to go directly to the Droplets astronomy example, you can execute it in your computer after setting things up (see [Quick Start](quickstart.md)) or you can  execute a life version in Binder following this link.
 
 [Binder exploratory Gaia analysis](https://mybinder.org/v2/gh/spsrc/droplets/master?filepath=gaia_exploratory%2Fjupyter_exploratory.ipynb)
 
-Or, if you are new to Jupyer Notebook and  you want to learn how to work with notebooks from scratch, keep reading.
+Or, if you are new to Jupyter Notebook and  you want to learn how to work with notebooks from scratch, keep reading.
 
 <!---
 Nice resources:
@@ -45,7 +45,7 @@ An excellent question! Some applications could be:
 
 * Python is lacking a really good IDE for doing exploratory scientific data analysis, like RStudio or Matlab. Some people use it simply as an alternative for that.
 * An early ambition with Jupyter notebooks was to be analogous to the lab notebook used in a wet lab. It would allow the scientist to document her day-to-day work and interweave results, ideas, and hypotheses with the code. From a reproducibility perspective, this is one of the main advantages.
-* Jupyter notebooks can be used to provide a tighter connection between your data and your results by integrating results of computations with the code that generated them. They can also do this in an interactive way that makes them very appealing for sharing with others.
+* Jupyter notebooks can be used to provide a tighter connection between your data and your results by integrating the results of computations with the code that generated them. They can also do this in an interactive way that makes them very appealing for sharing with others.
 * Notebooks are great tools for teaching. It is common now to share lecture materials for training schools as notebooks (see examples in the [Resources](#other-resources) section)
 * The community around Jupyter notebooks is large and dynamic, and there are tons of tools for sharing, displaying or interacting with notebooks.
 * In a research team, notebooks can be used to train new people on the methods and types of analysis used in your field.
@@ -86,7 +86,7 @@ Jupyter Notebook probably opened up a web browser for you automatically, otherwi
 
 What you're looking at is the Notebook dashboard. This is where you manage your files, notebooks, and kernels. The Files tab shows the files in your directory. The Running tab keeps track of all your processes. The third tab, Clusters, is used for parallel computing and won't be discussed further in this tutorial. You should see now the files of the droplets repository.
 
-You can do several things, for example you can navigate to any file, for example click on the file `environment.yml` to see its contents. You can close the browser tap when finished. You can also Upload files or create new ones. You can even press New > Terminal to start a bash terminal in your web browser!
+You can do several things: you can navigate to any file: for example, click on the file `environment.yml` to see its contents. You can close the browser tap when finished. You can also upload files or create new ones. You can even press New > Terminal to start a bash terminal in your web browser!
 
 ![](images/jupyter_file_terminal.gif)
 
@@ -120,9 +120,9 @@ These shortcuts are also available from the **Help** menu in your notebook (ther
 * ++tab++: for code completion or indentation
 * m/y: toggle between Markdown and Code cells
 * d-d: delete a cell
-* a/b: insert cells above/below current cell
+* a/b: insert cells above/below the current cell
 * x/c/v: cut/copy/paste cells
-* o: toggle output of current cell
+* o: toggle output of the current cell
 
 ## Some Markdown basics
 
@@ -180,7 +180,7 @@ Note how the output is displayed below the cell. This interactive way of working
 !!! warning
     Executing the cells in non-linear order is very common but also dangerous because the state of the program (the value of the variables and the functions) depend on the order you executed the cells. It is highly recommended that, from time to time, you restart the Kernel using "Restart & Clear Output" or "Restart & Run All" from the Kerner menu to make sure that the execution is linear.
 
-Variables defined in cells become variables in the global namespace. You can therefore share information between cells. Try to define a function or variable in one cell and use it in the next. For example:
+Variables defined in cells become variables in the global namespace. Therefore, you can share information between cells. Try to define a function or variable in one cell and use it in the next. For example:
 
 ```python
 import numpy as np
@@ -208,22 +208,22 @@ Here we show some features included in the notebooks to make your life easier. Y
 
 Lastly, code cells also allow you to execute shell commands. This very handy functionality is possible by prepending the command with `!`. Try `!ls -l` in a cell to list the files in the current directory. You can use any of the common shell commands to copy, move, remove, cat, wget, etc.
 
-As an exercise, you can explore contents of files. For example, what **is** a Jupyter notebook? Let's look a little at the notebook we're currently working in. Jupyter Notebook saves it every minute or so, so you will already have it available. Try `!ls` to list the files in the current directory. Aha, we have a new file called `my_first_notebook.ipynb` or maybe `Untitled.ipynb` if you didn't save it before. This is our notebook. Look at the first ten lines of the file by using `!head my_first_notebook.ipynb`. Seems like it's just a plain old JSON file. Since it's a text file it's suitable for version control with for example Git, although json is a diffitult format to visualize changes in the file. It turns out that Github and Jupyter notebooks are the best of friends, and Github can render notebooks so you can directly see the cells inputs and outputs as we will see more of later.
+As an exercise, you can explore the contents of files. For example, what **is** a Jupyter notebook? Let's look a little at the notebook we're currently working in. Jupyter Notebook saves it every minute or so, so you will already have it available. Try `!ls` to list the files in the current directory. Aha, we have a new file called `my_first_notebook.ipynb` or maybe `Untitled.ipynb` if you didn't save it before. This is our notebook. Look at the first ten lines of the file by using `!head my_first_notebook.ipynb`. Seems like it's just a plain old JSON file. Since it's a text file it's suitable for version control with for example Git, although json is a difficult format to visualize changes in the file. It turns out that Github and Jupyter notebooks are the best of friends, and Github can render notebooks so you can directly see the cell's inputs and outputs as we will see more of later.
 
 ### Magics
-Magics constitute a simple command language that significantly extends the power of Jupyter notebooks. There are two types of magics:
+Magics constitute a simple command language that significantly extends the power of Jupyter notebooks. There are two types of Magics:
 
-* Line magics - Commands that are prepended by `%`, and whose arguments only extend to the end of the line.
-* Cell magics - Commands that start with `%%` and then applies to the whole cell. Must be written on the first line of a cell.
+* Line Magics - Commands that are prepended by `%`, and whose arguments only extend to the end of the line.
+* Cell Magics - Commands that start with `%%` and then applies to the whole cell. Must be written on the first line of a cell.
 
-Now list all available magics with `%lsmagic` (which itself is a magic). You add a question mark to a magic to show the help (e.g. `%lsmagic?`). Some of them act as shortcuts for commonly used shell commands (`%ls`, `%cp`, `%cat`, ..). Others are useful for debugging and optimizing your code (`%timeit`, `%debug`, `%prun`, ..).
+Now list all available Magics with `%lsmagic` (which itself is a Magic). You add a question mark to a Magic to show the help (e.g. `%lsmagic?`). Some of them act as shortcuts for commonly used shell commands (`%ls`, `%cp`, `%cat`, ..). Others are useful for debugging and optimizing your code (`%timeit`, `%debug`, `%prun`, ..).
 
 For example, you can time the execution of a piece of code to benchmark its performance:
 
 ![](images/jupyter_timeit.png)
 
 #### Visualize plots in the notebook
-Python's favorite library for plotting, matplotlib, has its own magic as well: `%matplotlib`. Try out the code below, and you should hopefully get a pretty sine wave.
+Python's favourite library for plotting, matplotlib, has its own Magic as well: `%matplotlib`. Try out the code below, and you should hopefully get a pretty sine wave.
 
 ```python
 %matplotlib inline
@@ -238,7 +238,7 @@ fig.canvas.draw()
 ```
 !!! tip
     The `%matplotlib inline` and similar line
-    magics are only required once per notebook. You could for instance
+    magics are only required once per notebook. You could, for instance,
     add them to the first cell where you import matplotlib for plotting.
 
 #### Run code from a different kernel
@@ -257,11 +257,11 @@ Just use IPython Magics with the name of your kernel at the start of each cell t
 
 ![](images/jupyter_bash.png)
 
-Do you have really good libraries in Fortran or C that you trust over anything and you don't want to port them to python. Great, Jupyter does not have a problem with that, you can user your functions seamlessly in your notebook cells. For this example you will need to install `pip install -U fortran-magic` and immediately run fortran code in the notebook:
+Do you have really good libraries in Fortran or C that you trust over anything and you don't want to port them to python. Great, Jupyter does not have a problem with that, you can use your functions seamlessly in your notebook cells. For this example you will need to install `pip install -U fortran-magic` and immediately run fortran code in the notebook:
 
 ![](images/jupyter_fortran.png)
 
-Imagine the possibilities! You can also include C, perl, ruby code. You can run an interactive example in this [Binder multi-language demo](https://mybinder.org/v2/gh/binder-examples/multi-language-demo/master). Jupyter offers many Kernels to allow third-party interactions, you can see all of them in the [Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels) page. Another good example of use of the C++ library can be found in the [JupyterLab demo](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/try.jupyter.org?urlpath=lab) when you navigate to notebooks > Cpp.ipynb.
+Imagine the possibilities! You can also include C, perl, ruby code. You can run an interactive example in this [Binder multi-language demo](https://mybinder.org/v2/gh/binder-examples/multi-language-demo/master). Jupyter offers many Kernels to allow third-party interactions, you can see all of them in the [Jupyter kernels](https://github.com/jupyter/jupyter/wiki/Jupyter-kernels) page. Another good example of the use of the C++ library can be found in the [JupyterLab demo](https://mybinder.org/v2/gh/jupyterlab/jupyterlab-demo/try.jupyter.org?urlpath=lab) when you navigate to notebooks > Cpp.ipynb.
 
 #### LaTeX formulas
 
@@ -301,7 +301,7 @@ print("stderr:" + output.stderr)
     * That a Jupyter notebook consists of a series of cells, and that they can be either markdown or code cells.
     * That we execute the code in a code cell with the kernel that we chose when opening the notebook.
     * We can run shell commands by prepending them with `!`.
-    * Jupyter Magics offer us the possibility to integrade advanced functionality or even code from different kernels.
+    * Jupyter Magics offer us the possibility to integrate advanced functionality or even code from different kernels.
     * A Jupyter notebook is simply a text file in JSON format.
 
 
