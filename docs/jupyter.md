@@ -119,7 +119,7 @@ These shortcuts are also available from the **Help** menu in your notebook (ther
 * ++ctrl+s++: save the notebook
 * ++tab++: for code completion or indentation
 * m/y: toggle between Markdown and Code cells
-* d-d: delete a cell
+* dd: delete a cell
 * a/b: insert cells above/below the current cell
 * x/c/v: cut/copy/paste cells
 * o: toggle output of the current cell
