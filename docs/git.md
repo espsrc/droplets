@@ -25,9 +25,9 @@ In this section we will show how to use Git for version control and for collabor
 - The basic workflow of Git (edit, add, commit)
 - Synchronize your work online with Github
 - Pull/push content from local repository from/to online repository
-- Keep your files synchronized with your collaborators.
+- Keep your files synchronized with your collaborators
 
-The list of resources at [the end of this page](#other-resources) is also really useful to learn in more details all the power of Git.
+The list of resources at [the end of this page](#other-resources) is also really useful to learn in more detail all the power of Git.
 
 ## Introduction to Git
 
@@ -83,7 +83,7 @@ The last command is simply to verify that the local repository is connected to t
 
 We will follow a simple 3-steps tutorial to demonstrate the basic workflow. In a terminal, you should be in the directory you just cloned from Github and practice this sequence:
 
-1: Add a new file to the repo  
+**1: Add a new file to the repo**  
 Create a file `my_sources.txt` and edit it with your favourite editor to add a few lines. For example, this is the file I created:
 
 ```console
@@ -93,7 +93,7 @@ m87
 m44
 ```
 
-2: Add the file to the staging environment  
+**2: Add the file to the staging environment**  
 This will tell git which files we want to consider to update in the history.
 
 ```console
@@ -112,7 +112,7 @@ Changes to be committed:
 Always use `git status`, it gives you information on the status of the repository and what to do next. Now git knows that you are ready to save the contents of the file `my_sources.txt` into the history. This is called **staging** a file. If you had more files, you could stage them in one go with `git add .`.
 
 
-3: Create a commit
+**3: Create a commit**
 This will include the change in the repository history
 
 ```console
@@ -164,7 +164,7 @@ $ git commit -m "Include a complete csv list of messier objects"
 
 We can continue adding files and making changes. You don't need to commit after every minor change. The best practice is:
 
-- Commit often
+- Commit often.
 - But, commits should be ‘atomic’. That is, they should do one simple thing and they should do it completely.
 - Commit messages should be meaningful, clearly explaining why or how the files changes (you will thank yourself in the future for that).
 
@@ -384,23 +384,23 @@ print('Hello World')
 >>>>>>> master
 ```
 
-<<<<<<<: Indicates the start of the lines that had a merge conflict. The first set of lines are the lines from the file that you were trying to merge the changes into.
+```<<<<<<<``` Indicates the start of the lines that had a merge conflict. The first set of lines are the lines from the file that you were trying to merge the changes into.
 
-=======: Indicates the break point used for comparison. Breaks up changes that user has committed (above) to changes coming from merge (below) to visually see the differences.
+```=======``` Indicates the break point used for comparison. Breaks up changes that user has committed (above) to changes coming from merge (below) to visually see the differences.
 
->>>>>>>: Indicates the end of the lines that had a merge conflict.
+```>>>>>>>``` Indicates the end of the lines that had a merge conflict.
 
 #### Resolve the conflict
 
 You resolve a conflict by editing the file to manually merge the parts of the file that Git had trouble merging. This may mean discarding either your changes or someone else’s or doing a mix of the two. You will also need to delete the <<<<<<<, =======, and >>>>>>> in the file. So in this project the user have to decide in favour of one version over another, or edit a new solution.
 
-If you find there are particularly nasty conflicts and you want to abort the merge you can using:
+If you find there are particularly nasty conflicts and you want to abort the merge you can use:
 
 ```console
 git merge --abort
 ```
 
-Good practice: Before you start trying to resolve conflicts make sure you fully understand the changes and how they are incompatible. If you do not you risk making things more tangled. Once you do and you go about fixing the problem be careful, but do not be afraid; the whole point of version control is your past versions are all safe. Nevertheless merge conflicts can be intimidating to resolve, especially if you are merging branches that diverged a great many commits ago which may now have many incompatibilities. This is why it is good practice to merge other’s changes into your work frequently.
+Good practice: Before you start trying to resolve conflicts make sure you fully understand the changes and how they are incompatible. If you do not, you risk making things more tangled. Once you do and you go about fixing the problem be careful, but do not be afraid; the whole point of version control is your past versions are all safe. Nevertheless merge conflicts can be intimidating to resolve, especially if you are merging branches that diverged a great many commits ago which may now have many incompatibilities. This is why it is good practice to merge other’s changes into your work frequently.
 
 
 
