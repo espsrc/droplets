@@ -111,15 +111,16 @@ Cells in Jupyter notebooks can be of two types: markdown or code.
 Before we continue, here are some shortcuts that can be useful. Note that they are only applicable when in command mode (blue frames). Most of them are also available from the menus.
 These shortcuts are also available from the **Help** menu in your notebook (there's even an option there to edit shortcuts).
 
-* ++enter++: enter Edit mode
-* ++escape++: enter Command mode
-* ++ctrl+enter++: run the cell
-* ++shift+enter++: run the cell and select the cell below
-* ++alt+enter++: run the cell and insert a new cell below
-* ++ctrl+s++: save the notebook
-* ++tab++: for code completion or indentation
+
+* <kbd>Enter</kbd>: enter Edit mode
+* <kbd>Esc</kbd>: enter Command mode
+* <kbd>Ctrl</kbd>+<kbd>Enter</kbd>: run the cell
+* <kbd>Shift</kbd>+<kbd>Enter</kbd>: run the cell and select the cell below
+* <kbd>Alt</kbd>+<kbd>Enter</kbd>: run the cell and insert a new cell below
+* <kbd>Ctrl</kbd>+s: save the notebook
+* <kbd>Tab</kbd>: for code completion or indentation
 * m/y: toggle between Markdown and Code cells
-* d-d: delete a cell
+* dd: delete a cell
 * a/b: insert cells above/below the current cell
 * x/c/v: cut/copy/paste cells
 * o: toggle output of the current cell

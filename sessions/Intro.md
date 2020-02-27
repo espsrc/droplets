@@ -1,18 +1,28 @@
 ---
-title: Training droplets
+title: Open Science Droplets
 ---
 
+# 
+
+![](../water_droplets.png){width=100%}
+
+# Purpose
+- Make our research more flexible, efficient, collaborative and open
+- Build a community to share know-how
+- Discover and share tools and practices
+- Promote Open and Reproducible Science
+ 
 # Goals
+- Github repository: https://github.com/spsrc/droplets
+- 
+
+
+# Logistics
+- Open for everyone to participate!
 - Regular meetings twice a month
 - You bring your coffee, we bring cookies
-- Show something under 10 minutes
-- 5 minutes for Q&As
-
-# Goals
-- Promote Open and Reproducible Science
-- Announcements: list@iaa.es, subscribe!
-- Material: https://github.com/spsrc/droplets
-- Open for everyone to participate!
+- Demonstration sessions to showcase tools
+- Open for questions, discussions and networking
 
 # What to expect
 - Show, don't tell
@@ -20,5 +30,3 @@ title: Training droplets
 - Informal presentations
 - Training plan will evolve depending on feedback
 
-# Aim
-- Build a community to share know-how
