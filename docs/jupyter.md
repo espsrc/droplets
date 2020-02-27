@@ -21,21 +21,15 @@ You think it would be a good idea to explore the stellar population in this area
 
 <h3>Objectives and scope</h3>
 
-In this section, we will see the value of Jupyter notebooks as a dynamic tool for exploratory analysis. We will learn how to initialize and navigate through notebooks, the basic structure and syntax to use a Jupyter notebook, the notebook cells and the Magic commands. As an example, we will do an exploratory analysis of a star population from the *[Gaia](https://sci.esa.int/web/gaia)* catalogue.
+In this section, we will see the value of Jupyter notebooks as a dynamic tool for exploratory analysis. We will learn how to initialize and navigate through notebooks, the basic structure and syntax to use a Jupyter notebook, the notebook cells and the Magic commands. 
 
-If you want to go directly to the Droplets astronomy example, you can execute it in your computer after setting things up (see [Quick Start](quickstart.md)) or you can  execute a life version in Binder following this link.
+We have prepared a notebook example to show an exploratory analysis of a moving cluster using data from the *[Gaia](https://sci.esa.int/web/gaia)* satellite. If you already now the basics of Jupyter notebooks, you can check the example in different formats:
 
-[Binder exploratory Gaia analysis](https://mybinder.org/v2/gh/spsrc/droplets/master?filepath=gaia_exploratory%2Fjupyter_exploratory.ipynb)
+- See how the final notebook looks like in github: [exploratory Gaia analysis](https://github.com/spsrc/droplets/blob/master/gaia_exploratory/jupyter_exploratory.ipynb)
+- Execute and interact in a life version in Binder: [Binder exploratory Gaia analysis](https://mybinder.org/v2/gh/spsrc/droplets/master?filepath=gaia_exploratory%2Fjupyter_exploratory.ipynb)
+- Try the notebook on your local machine (see [Quick Start](quickstart.md) for installation instructions).
 
 Or, if you are new to Jupyter Notebook and  you want to learn how to work with notebooks from scratch, keep reading.
-
-<!---
-Nice resources:
-
-https://jupyter.org/try
-
-
--->
 
 ## Introduction to Jupyter notebooks
 The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain code, equations, visualizations and text. The functionality is partly overlapping with [R Markdown](https://rmarkdown.rstudio.com/), in that they both use markdown and code chunks to generate reports that integrate results of computations with the code that generated them. Jupyter Notebook comes from the Python community while R Markdown was developed by RStudio, but you could use most common programming languages in either alternative. In practice though, it's quite common that R developers use Jupyter but probably not very common that Python developers use RStudio.
