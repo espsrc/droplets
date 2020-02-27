@@ -1,52 +1,42 @@
 ---
 title: Open Science Droplets 01
+subtitle: Jupyter notebook, the XXI century lab book
+author: Javier Moldón
+date: 2020-03-02
+#theme: "Ilmenau"
+
 ---
 # 
 
-![](../../water_droplets.png)
+![](water_droplets_01.png)
 
 # 
 
 ![](email_galileo1.png)
 
-# email from Galileo
+# Objectives
 
-# Quote 
-> Hi! 
->  
-> The other day my friend Ptolemy told me about a "nebulous mass in the breast of Cancer"[1]. I observed it with my new telescope and I could resolve about 40 individual stars! This is amazing, and it could be a good topic for a paper. Please, do a first exploratory analysis of the region and see what you can find. 
->  
-> R.A. 130.025 deg 
-> Dec. 19.9833 deg 
->  
-> Best regards, 
->  
-> Galileo 
->  
-> [1] Claudius Ptolemy, Almagest, AD 100-170 (see V/61) 
+- Jupyter notebooks as a dynamic tool for exploratory analysis
+- Initialize a notebook
+- Basic structure and syntax: cells
 
+# Other resources
 
-# Motivation
+- Jake VanderPlas youtube series on Reproducible data analysis with jupyter [Youtube](https://www.youtube.com/playlist?list=PLYCpMb24GpOC704uO9svUrihl-HY1tTJJ)
+- Try Jupyter in your browser [link](https://jupyter.org/try)
+- Quickview Notebook sharing the Gravitational Wave detection [Notebook](https://github.com/losc-tutorial/quickview/blob/master/index.ipynb)
+- A Machine Learning course using Notebooks: [Lecture 1: Density Est](https://github.com/carmensg/IAA_School2019/blob/master/lectures/Day3-ZeljkoIvezic/notebooks/density_estimation.ipynb), [Lecture 3: Classification](https://github.com/carmensg/IAA_School2019/blob/master/lectures/Day3-ZeljkoIvezic/notebooks/classification.ipynb) and [Lecture 4: Dimensionality Reduction](https://github.com/carmensg/IAA_School2019/blob/master/lectures/Day3-ZeljkoIvezic/notebooks/dimensionality_reduction.ipynb).
+- The full tutorial on an international Python conference: [PyCon 2015 Scikit-learn Tutorial](https://github.com/jakevdp/sklearn_pycon2015)
 
-We understand that people will learn a tool only when they need it or they see the value on using it. Therefore, the tutorials follow the narrative of presenting tools after a scientific necessity appears, such as the necessity to share your work with colleagues or when you need to manage the dependencies of some software you need.
+# Take away
 
-# Plan
+- Easy to learn tool
+- Interweave results, ideas, and hypotheses with the code
+- Natural format to create a scientific narrative
+- State of scripts is not linear, depends on user
+- Excellent tools to share your research
 
-To progressively incorporate new approaches:
+#  Next session
 
-- Jupyter: the XXI century lab book
-- Collaborative Jupyter notebooks through git
-- Software management with conda
-- Python visualization and ipython widgets
-- Share your results with the world with Binder
-- Reproducible workflows to rule them all: Snakemake
-- Contairenization for the posterit
-- Your work for posterity. Zenodo
-
-# Details
-
-Resources and documentation:  
-https://droplets-spsrc.readthedocs.io/en/latest/
-
-Github repo:  
-https://github.com/spsrc/droplets
+- March 16  
+- Collaborative Jupyter notebooks through GitHub
