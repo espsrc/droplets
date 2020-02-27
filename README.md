@@ -23,7 +23,7 @@ We are collaboratively constructing documentation with details and examples on h
 
 # Sessions at IAA-CSIC
 
-We will organize demonstration sessions to showcase how these tools can be incorporated into astronomical research. In each session we will show a real-life example on how to use one tool, without entering in the technical details of how it works. We follow the principle of "show, don't tell" to present a tasting of tools that you may want to consider using. The sessions are complemented with the documentation we are building with details on how to install and use these tools (see link below). 
+We will organize demonstration sessions to showcase how these tools can be incorporated into astronomical research. In each session we will show a real-life example on how to use one tool, without entering in the technical details of how it works. We follow the principle of "show, don't tell" to present a tasting of tools that you may want to consider using. The sessions are complemented with the documentation we are building with details on how to install and use these tools ([Documentation](https://droplets-spsrc.readthedocs.io/)). 
 
 Regular meetings will happen every two Mondays at 10:30 am in the room adjacent to the kitchen. We will be happy to stay afterwards for extended discussions and networking. We will get the ball rolling with Jupyter notebooks and will continue with other tools like git, conda, containers, pipelines and Zenodo. However, everybody is welcome to suggest or present a tool that they consider interesting as well. There are no technical requirements for the sessions, you just will need your coffee, not your laptop.
 
