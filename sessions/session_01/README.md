@@ -20,6 +20,26 @@ date: 2020-03-02
 - Initialize a notebook
 - Basic structure and syntax: cells
 
+# Additional information
+- droplets resources
+- fortran magic
+- Server options
+
+# Summary (I)
+- pros
+  - Felixibility for exploratory data, training, sharing
+  - Web app, accessible from anywhere (ssh, server)
+  - Markdown + code + resuts. Science results are more "tangible"
+  - Reports in different formats, dashboards
+  - Many extensions, and growing!
+
+# Summary (II)
+- cons
+  - Hidden state and out-of-order execution
+  - Notebooks encourage bad habits (not ideal for software development)
+  - In general, not as powerful as a stand-alone application or modules (not ideal for sharing good code)
+  - Some difficulties to obtain diff
+
 # Other resources
 
 - Jake VanderPlas youtube series on Reproducible data analysis with jupyter [Youtube](https://www.youtube.com/playlist?list=PLYCpMb24GpOC704uO9svUrihl-HY1tTJJ)
