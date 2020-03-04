@@ -289,6 +289,50 @@ print("stdout:" + output.stdout)
 print("stderr:" + output.stderr)
 ```
 
+## Running a Jupyter notebook from a remote server
+
+Because Jupyter is basically a web app, you can visualize and interact with Jupyter even if it is running in a different machine (for example a large cluster). This means that the heavy processing can happen remotely while you interact with the notebook from your laptop. There are two options:
+
+- If your server has a public IP address, you can directly connect to the notebook as if it was a web page. When you start the Jupyter server using the command line, it will display the IP and port serving the notebook, and the token (a unique identifier than can be used as a password to access the notebook).
+- If you have ssh access to the server, you can create a tunnel of the server port to your local machine (keep reading).
+
+We will show an example of how to run the second option. Imaging your local computer (for example your laptop or desktop) is called `mylaptop`, and that your remore server is called `mybigcomputer` where your username is `galileo`.
+
+Open a terminal in your `mybigcomputer`:
+
+```console
+$ jupyter notebook --no-browser --port=9999
+```
+
+- "--no-browser": this starts the notebook without opening a browser
+- "--port=9999": this sets the port for starting your notebook. Default is 8888
+
+And leave it open, don't touch this terminal. You can choose a different port (8889 is just an example) if you want, but remember the number. 
+
+Open a terminal on `mylaptop`:
+
+```console
+$ ssh -N  -L localhost:8890:localhost:9999 galileo@mybigcomputer
+```
+
+- "-N": suppresses the execution of a remote command, which means to forward it.
+- "-L": this argument requires an input in the form of local_socket:remote_socket. Here we also specify the local and remote ports
+
+If nothing at all happens, that is good! Again, the 8890 is an example, you can choose a different port number if you want. You need to leave this terminal running to keep the tunneling alive, so don't close it. Some manuals include a `-f` to the ssh command, which puts the ssh command in the background. We prefer that the command is running in the terminal so you can easily kill it when needed.
+
+That's it, now in your laptop open a web browser and go to this address:
+
+```
+http://localhost:8890
+```
+
+For protection, you may be requested to introduce a token (a long alphanumerical code) that verifies that you have rights to access the notebook. That token is displayed in the mybigcomputer terminal when you started the jupyter notebook.
+
+If you want to stop everything, press <kbd>Ctrl</kbd>+<kbd>C</kbd> on both terminals in mylaptop and mybigcomputer.
+
+More details on this proceduce can be found in this blog post [Running a Jupyter notebook from a remote server](https://ljvmiranda921.github.io/notebook/2018/01/31/running-a-jupyter-notebook/).
+
+
 
 !!! note "Quick recap"
     In this section we've learned:
@@ -307,3 +351,8 @@ print("stderr:" + output.stderr)
 - Quickview Notebook sharing the Gravitational Wave detection [Notebook](https://github.com/losc-tutorial/quickview/blob/master/index.ipynb)
 - A full Machine Learning course using Notebooks, for example [Lecture 1: Density Estimation](https://github.com/carmensg/IAA_School2019/blob/master/lectures/Day3-ZeljkoIvezic/notebooks/density_estimation.ipynb), [Lecture 3: Classification](https://github.com/carmensg/IAA_School2019/blob/master/lectures/Day3-ZeljkoIvezic/notebooks/classification.ipynb) and [Lecture 4: Dimensionality Reduction](https://github.com/carmensg/IAA_School2019/blob/master/lectures/Day3-ZeljkoIvezic/notebooks/dimensionality_reduction.ipynb).
 - Another example of the full tutorial contents on an international Python conference: [PyCon 2015 Scikit-learn Tutorial](https://github.com/jakevdp/sklearn_pycon2015)
+
+Not everything is a fairy tale in Jupyter notebooks. So when you are ready to not like Jupyter notebooks you can read these discussions:  
+- Blog post: [Why I Don't Like Jupyter](http://opiateforthemass.es/articles/why-i-dont-like-jupyter-fka-ipython-notebook/)  
+- Blog post: [Why Jupyter Is Not My Ideal Notebook](https://www.sicara.ai/blog/2019-02-25-why-jupyter-not-my-ideal-notebook)  
+- Youtube: [I don't like notebooks.- Joel Grus (Allen Institute for Artificial Intelligence)](https://www.youtube.com/watch?v=7jiPeIFXb6U)  
