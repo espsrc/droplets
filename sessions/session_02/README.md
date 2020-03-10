@@ -10,38 +10,31 @@ date: 2020-03-16
 
 #
 
-![](email_galileo2.png)
+![](email_galileo_02.png)
  
 
 # Motivation
 - In session 01 we created a Jupyter notebook
 - Now we want to share it with our collaborator
-- Includes version control
+- Include version control
 - Use an online service (persistent backup and availability)
+- First stage: basic functionality without git (no command line for now)
 
 # Requirements
-- Account on github.com
-# Create a repository on GitHub
+- Account on [github.com](https://github.com/) (or similar [Gitlab](https://about.gitlab.com/), [Bitcucket](https://bitbucket.org/product/))
+- Something to share
 
-- log into github.com (others: gitlab, bitbucket, etc)
-- create and initialize a repository
+# Plan 
+- Start an account
+- Start a repository (Description, README, LICENSE)
+- Upload files
+- Make changes to file and commit them
+- View differences and history
+- Share your work!
+- Collaborate: issues
 
-# Share: Add the notebook to the repository
-- Click upload files
-- Choose the notebook from your PC
-
-# Update the notebook
-- jupyter lab # open and edit notebook
-- git add
-- git commit -m " here is my change "
-- git push
-- see updated notebook in web browser
-
-# Collaborate: GitHub issues
-- Open an issue in GitHub
-
-# Problem
-- My boss can see the notebook but cannot execute it
+# New problem
+- My colleague can see the notebook but cannot execute it
 - Solutions in the next session!
 
 # Reference Material
