@@ -20,9 +20,10 @@ the e-mail and send different figures as attachments. This is a poor approach
 that complicates visualization, makes it difficult to connect description with
 figures, and that probably will miss details on how the results were obtained.
 Alternatively, we could generate a .doc document with comments and plots and
-send it as a pdf, but docs are difficult to update and hard to put together.
+send it as a pdf but these are not designed to share the source code of your
+analysis and avoid making your research really open.
 
-The alternative we propose to use a Jupyter notebook, which has several
+The alternative we propose is to use a Jupyter notebook, which has several
 advantatges:
 
 - It is easy to export as pdf or html, and can be visualized in nearly any platform.
@@ -110,8 +111,8 @@ It is always a good idea to have a README.md file in each repository, it will be
 
 We will practise how to make changes to a file with the README.md file.
 
-- Click the ```README.md``` file. You will se the rendered version of the Markdown file.
-- Click the pencil icon in the upper right corner of the file view to edit. You will see the plain-text Markdon file. You can use all the markdown syntax features we saw in [Some Markdown basics](jupyter.md#some-markdown-basics). Write some more details about the repository, at leas a few separate lines. Also, remove some of the existing lines.
+- Click the ```README.md``` file. You will see the rendered version of the Markdown file.
+- Click the pencil icon in the upper right corner of the file view to edit. You will see the plain-text Markdon file. You can use all the markdown syntax features we saw in [Some Markdown basics](jupyter.md#some-markdown-basics). Write some more details about the repository, at least a few separate lines. Also, remove some of the existing lines.
 - Commit your changes so the file is actually modified. You can change the master branch (default) as we are not using other branches now.
 
 On GitHub, saved changes are called **commits**. Each commit has an associated commit message, which is a description explaining why a particular change was made. **Commit** messages capture the history of your changes, so other contributors can understand what you’ve done and why.
@@ -121,7 +122,7 @@ On GitHub, saved changes are called **commits**. Each commit has an associated c
 First, go back to the repository by clicking on its name on the top of the
 page. You will see that the README file now contains your changes. If you see
 the "commits" section now should contain at least 2 (the initial commit when
-you created the files in the repository, and the change you just commited).
+you created the files in the repository, and the change you just committed).
 Click on the `commits` section. You will see a list with the full history of
 changes (commits) in your repository. A commit may contain changes from several
 files. Click on the name of the first commit (or in the 7-letter code on the
@@ -149,7 +150,7 @@ wget https://raw.githubusercontent.com/spsrc/droplets/master/gaia_exploratory/ju
 
 Upload the file from your computer, write a commit message describing what you have done, and if you want update the README.md file to explain that the notebook is now available in the repository.
 
-The uploaded files will show in the home page of the repository. If you navigate the the .ipynb file Github will render the contents for you. If you share that path to your collaborators, they will be able to see your analysis!
+The uploaded files will show in the home page of the repository. If you navigate the .ipynb file Github will render the contents for you. If you share that path to your collaborators, they will be able to see your analysis!
 
 ### Additional features with branches
 
@@ -167,7 +168,7 @@ This can be opened from any browser, including mobile phones with very good qual
 
 # Other resources
 
-- You can even write books on Github! For example [Full book](https://jakevdp.github.io/PythonDataScienceHandbook/) and the Github [repository](https://github.com/jakevdp/PythonDataScienceHandbook).
-- You can even write papers on Github! [Mutiband Lomb-Scargle Periodograms](http://jakevdp.github.io/multiband_LS/). In this example, the author even received feedback from a world expert on the topic as a Github [issue](https://github.com/jakevdp/multiband_LS/issues/1) while writing the paper. Check this talk explaining the experience [In Defense of Extreme Openness](https://zenodo.org/record/49577)
+- You can even write books on Github! This is [an example](https://jakevdp.github.io/PythonDataScienceHandbook/) and the Github [repository](https://github.com/jakevdp/PythonDataScienceHandbook).
+- You can also write papers on Github! [Mutiband Lomb-Scargle Periodograms](http://jakevdp.github.io/multiband_LS/). In this example, the author even received feedback from a world expert on the topic as a Github [issue](https://github.com/jakevdp/multiband_LS/issues/1) while writing the paper. Check this talk explaining the experience [In Defense of Extreme Openness](https://zenodo.org/record/49577)
 - To learn more: [Github Guides](https://guides.github.com/)
 - You can also write and host your personal webpage in Github: [examples](https://github.com/topics/personal-website)
