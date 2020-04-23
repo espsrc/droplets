@@ -16,6 +16,7 @@ nav:
     - Containers (TBD): containers.md
     - Reproducibility examples (TBD): reproducibility.md
       #    - Testing: science.md
+    - Resources (TBD): resources.md
 
 #theme: 'material' # Excellent searcher. Too clear. Hard to find subsections
 #theme: windmill    # Very good search bar. Clean navigation
