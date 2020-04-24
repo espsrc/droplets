@@ -85,7 +85,7 @@ A repository is usually used to organize a single project. Repositories can cont
 - You can choose if you want to make it Public or Private. Public repos will be searchable by anyone, so the whole community will be able to access the files, comments, etc. Private repos will only be available to the users you explicitly invite.
 
 !!! warning
-    Github now offers unlimited private repositories for **unlimited collaborators**, before April 2020 those were limited to three collaborators. 
+    Github now offers unlimited private repositories for **unlimited collaborators**, before April 2020 those were limited to three collaborators [changes to GitHub's plans](https://help.github.com/en/github/getting-started-with-github/faq-about-changes-to-githubs-plans). 
 
 - Select Initialize this repository with a README (see next section).
 - Add a license. If in doubt read section below or select `GNU General Public License v3.0`.
