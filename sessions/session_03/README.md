@@ -74,7 +74,7 @@ ModuleNotFoundError: No module named 'astroquery'
 Time to install `astroquery`. We repeat the operation, so we go back to the terminal and run:
 
 ```
- mamba install --channel conda-forge astroquery
+ mamba install astroquery
 ```
 But, contrary to the installation of `matplotlib` we cannot install `astroquery`:
 ```
