@@ -4,6 +4,7 @@
 Our collaborator shared a [Jupyter notebook](https://github.com/spsrc/droplets/blob/master/gaia_exploratory/jupyter_exploratory.ipynb) with us
 and we want to re-run it and change a few things.
 
+## Install Jupyter using conda
 Let's work on a temporary folder so at the end of the session we will simply remove the folder to clean everything up:
 ```
  mktemp --directory
@@ -50,25 +51,32 @@ After confirming that the Jupyter is available, let's open up the notebook:
 ```
  jupyter notebook droplets/gaia_exploratory/jupyter_exploratory.ipynb 
 ```
+For the purpose of this demo we will set `Gaia.ROW_LIMIT = 5000` before running the cell to make the execution faster. This will only load a fraction of the data.
 
-Update `Gaia.ROW_LIMIT` with `5000` for the purpose of this demo before running the cell, which produces the following error:
+Now we execute the first cell ..., which produces the following error:
 ```
 ModuleNotFoundError: No module named 'matplotlib'
 ```
 
-The `matplotlib` library is missing. Let's install it on a separate terminal:
+## Getting the software needed to run the analysis
+The `matplotlib` library is missing. Let's install it on top of the same `jupyter_env` conda environment. We open a new terminal, activate the environment and install the missing library: 
 ```
 source conda-install/etc/profile.d/conda.sh 
 conda activate jupyter_env
 mamba install matplotlib
 ```
 
-Re-running the first cell produces a second error:
+Back in the notebook, re-running the first cell gives no problem with `matploblib`, but produces a new error:
 ```
 ModuleNotFoundError: No module named 'astroquery'
 ```
 
-Time to install `astroquery`:
+Time to install `astroquery`. We repeat the operation, so we go back to the terminal and run:
+
+```
+ mamba install --channel conda-forge astroquery
+```
+But, contrary to the installation of `matplotlib` we cannot install `astroquery`:
 ```
 Problem: nothing provides requested astroquery
 ```
@@ -79,17 +87,17 @@ Wait, is there no `astroquery` package? Let's check by searching the package on 
 `astroquery` is only available in other channels. A channel in `conda` is like a repository in `apt-get`, just a remote folder
 with extra packages available.
 
-Out of all the available option we strongly recommend using [Conda Forge](https://conda-forge.org/) since it has a big community
+Out of all the available options we strongly recommend using [Conda Forge](https://conda-forge.org/) since it has a big open-source community
 behind it, using very good practices for creating and upgrading conda packages.
 
-Back to our issue, let's then install `astroquery`:
+Back to our issue, let's then install `astroquery` in the terminal but now selecting the specific channel that contains the package:
 ```
  mamba install --channel conda-forge astroquery
 ```
 
-Re-running the cell now works!
+Back to the Jupyter notebook, re-running the cell now works!
 
-Great, let's move onto the next cells.
+Great, let's move onto the next cells and execute them.
 
 Oh no! A few cells below we get a similar issue again!
 ```
@@ -98,25 +106,47 @@ ModuleNotFoundError: No module named 'pandas'
 
 Wouldn't it be nice if the notebook was shipped with all the dependencies it needs to run?
 
+## Defining all required software in a single file
+
 Well, that is what **conda environment files** are for! For this notebook, our colleage has also included all the required dependencies
-to run the notebook [here](https://github.com/spsrc/droplets/blob/session-conda/environment.yml).
+to run the notebook [here](https://github.com/spsrc/droplets/blob/session-conda/environment.yml). These are the contents of the `environment.yml` file
+
+```yml
+name: droplets
+
+channels:
+ - conda-forge
+ - defaults
+
+dependencies:
+ - python 3.8.*
+ - astropy 4.0.*
+ - astroquery 0.4.*
+ - matplotlib 3.1.*
+ - numpy 1.18.*
+ - jupyter 1.0.*
+ - pandas 1.0.*
+ - mkdocs 1.0.*
+```
 
 The official documentation about conda environments is available at:
 
 https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
 
-Let's give it a go then!
+With a single command we can install all the dependencies at once. Let's give it a go then!
 ```
  mamba env create --file droplets/environment.yml
 ```
 
-We need to close the notebook and re-launch it from the terminal with the new conda environment:
+This creates a new conda environment called `droplets` as pre-defined in the file. Remember that we had activated the environment `jupyter_env` before. We need to activate the new environment `droplets` that contains all the required software. Also, we need to close the notebook and re-launch it from the terminal with the new conda environment:
 ```
  conda activate droplets
  jupyter notebook droplets/gaia_exploratory/jupyter_exploratory.ipynb
 ```
 
 Now we run the full notebook without issues, yay!
+
+## Creating environments for other projects
 
 What if we want to re-use part of this environment for a different project?
 
@@ -125,12 +155,18 @@ Just copy and paste the `environment.yml` into a different file and:
 * Add/remove dependencies
 ```
  cp droplets/environment.yml project-a.yml
+ # Now edit the file project-a.yml with a new name (for example project-a) and the dependencies you want. Create the environment with:
  mamba env create --file project-a.yml
+ ```
+ 
+ Now you are ready to activate the environment with its own software, independent from the other environments:
+ ```
+ conda activate projet-a
 ```
 
 There you are! The idea is that for each project you also include the conda environment file that contains
 all the required dependencies for the code to run properly. If you upload the `environment.yml` file to
-you `git` repository, you can even keep it under version control! That's great for reproducibility!
+your `git` repository, you can even keep it under version control! That's great for reproducibility!
 
 Conda and conda environments are quite flexible and we encourage you to read more:
 
