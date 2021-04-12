@@ -1,9 +1,10 @@
 # Practical demonstrations at IAA
-![](../water_droplets.png)
 
 ## Droplets sessions
 - [Session 01 - Jupyter notebook, the XXI century lab book](droplets-01-jupyter-notebooks/droplets-01-jupyter-notebooks.md)
 - [Session 02 - Keep your software organized with Conda](droplets-02-conda/droplets-02-conda.md)
+
+![](../water_droplets.png)
 
 ## Purpose
 - Make our research more flexible, efficient, collaborative and open
