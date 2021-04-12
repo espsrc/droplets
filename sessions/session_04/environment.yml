@@ -1,6 +1,0 @@
-
-name: session-04
-
-dependencies:
- - python
- - jupyterlab

@@ -1,37 +1,36 @@
----
-title: Open Science Droplets
-subtitle: Practical demonstrations at IAA
----
+# Practical demonstrations at IAA
+![](../water_droplets.png)
 
-# 
-![](../water_droplets.png){width=100%}
+## Droplets sessions
+- [Session 01 - Jupyter notebook, the XXI century lab book](droplets-01-jupyter-notebooks/droplets-01-jupyter-notebooks.md)
+- [Session 02 - Keep your software organized with Conda](droplets-02-conda/droplets-02-conda.md)
 
-# Purpose
+## Purpose
 - Make our research more flexible, efficient, collaborative and open
 - Build a community to share know-how
 - Discover and share tools and practices
 - Promote Open and Reproducible Science
  
-# Material
+## Material
 - Github repository:  
 https://github.com/spsrc/droplets
 - Documentation (Open Science Droplets):  
 https://droplets-spsrc.readthedocs.io/
 
-# Logistics
+## Logistics
 - Open for everyone to participate!
 - Regular meetings twice a month
 - You bring your coffee, we bring cookies
 - Demonstration sessions to showcase tools
 - Open for questions, discussions and networking
 
-# What to expect
+## What to expect
 - Show, don't tell
 - Details will be provided in Reference Material
 - Informal presentations
 - Training plan will evolve depending on feedback
 
-# Plan
+## Plan
 
 To progressively incorporate new tools:
 
