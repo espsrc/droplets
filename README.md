@@ -3,6 +3,11 @@
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/spsrc/droplets/master?filepath=gaia_exploratory%2Fjupyter_exploratory.ipynb)
 [![Documentation Status](https://readthedocs.org/projects/droplets-spsrc/badge/?version=latest)](https://droplets-spsrc.readthedocs.io/?badge=latest)
 
+### Quick links
+
+- [Open Science Droplets Webpage](https://droplets-spsrc.readthedocs.io/)
+- [Live sessions at the IAA](./sessions/)
+
 ![Water droplets](./water_droplets.png)
 
 This initiative compiles a series of tutorials describing tools and good practices to make your research analysis more organized, automatic and reproducible with an astrophysical science case as a guiding thread.
@@ -21,7 +26,7 @@ We are collaboratively constructing documentation with details and examples on h
 
 
 
-# Sessions at IAA-CSIC
+# Sessions at the IAA-CSIC
 
 We will organize demonstration sessions to showcase how these tools can be incorporated into astronomical research. In each session we will show a real-life example on how to use one tool, without entering in the technical details of how it works. We follow the principle of "show, don't tell" to present a tasting of tools that you may want to consider using. The sessions are complemented with the documentation we are building with details on how to install and use these tools ([Documentation](https://droplets-spsrc.readthedocs.io/)). 
 
