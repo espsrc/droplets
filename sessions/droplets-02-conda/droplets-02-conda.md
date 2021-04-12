@@ -1,5 +1,5 @@
-
-# Session: Keep your software organized with Conda
+# Open Science Droplets 02
+# Keep your software organized with Conda
 
 Our collaborator shared a [Jupyter notebook](https://github.com/spsrc/droplets/blob/master/gaia_exploratory/jupyter_exploratory.ipynb) with us
 and we want to re-run it and change a few things.
