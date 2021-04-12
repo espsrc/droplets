@@ -109,7 +109,7 @@ Wouldn't it be nice if the notebook was shipped with all the dependencies it nee
 ## Defining all required software in a single file
 
 Well, that is what **conda environment files** are for! For this notebook, our colleage has also included all the required dependencies
-to run the notebook [here](https://github.com/spsrc/droplets/blob/session-conda/environment.yml). These are the contents of the `environment.yml` file
+to run the notebook [here](https://github.com/spsrc/droplets/blob/master/environment.yml). These are the contents of the `environment.yml` file
 
 ```yml
 name: droplets
