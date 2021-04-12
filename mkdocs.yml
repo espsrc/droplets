@@ -5,6 +5,7 @@ repo_url:
 
 nav:
     - Home: index.md
+    - Sessions: sessions.md
     - Quick Start: quickstart.md
     - Jupyter notebooks: jupyter.md
     - Collaborative science online, Github: github.md
