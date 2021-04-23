@@ -1,7 +1,7 @@
 # Open Science Droplets 03
 # Collaborative science using Github
 
-In this session we will smoothly introduce version control through Github. We will show the platform, create a repository and show how we can interacte with collaborators while keeping our files safe and accessible.
+In this session we will smoothly introduce version control through Github. We will show the platform, create a repository and show how we can interact with collaborators while keeping our files safe and accessible.
 
 We will cover the following topics:
 
