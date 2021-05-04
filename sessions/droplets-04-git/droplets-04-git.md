@@ -1,11 +1,7 @@
-This is to discuss the script for session 3.
+# Open Science Droplets 04
+# Version control with git (episode I)
 
-First script in markdown:
-
-------------
-------------
-------------
-# Set up
+## Set up
 First we will check if you have `git` installed in your computer. Open a terminal and write:
 ```bash
 git --version
