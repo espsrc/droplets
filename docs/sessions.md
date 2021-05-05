@@ -18,3 +18,10 @@ Here we want to solve these two problems: first, we are trying to execute a note
 - Presenter: Manuel Parra (IAA-CSIC)
 
 In this session we will have a gentle introduction to Github. The problem we want to solve is: what would be an efficient way of keeping our files under version control, being accessible online, allowing me and my collaborators to work in parallel and to contribute with files, code and discussions to a project while keeping everything organized and backed up? The notes of the session can be found in [Session 03](https://github.com/spsrc/droplets/blob/master/sessions/droplets-03-github/droplets-03-github.md). We also have a tutorial on how to start with Github and additional resources in the droplets webpage for [Collaborative science online, Github](https://droplets-spsrc.readthedocs.io/github/).
+
+# Session 04 - Version control with git (episode I)
+
+- Date: 2021-05-10
+- Presenter: Manuel Parra (IAA-CSIC)
+
+In this session we will introduce git. We will show how to work on a local repository, how to travel in (git)time and how to work with branches. The session notes will be available soon. We also have additional resources in the [droplets webpage](https://droplets-spsrc.readthedocs.io/git/). 
