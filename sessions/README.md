@@ -5,6 +5,7 @@
 - [Session 01 - Jupyter notebook, the XXI century lab book](droplets-01-jupyter-notebooks/droplets-01-jupyter-notebooks.md)
 - [Session 02 - Keep your software organized with Conda](droplets-02-conda/droplets-02-conda.md)
 - [Session 03 - Collaborative science using Github](droplets-03-github/droplets-03-github.md)
+- [Session 04 - Version control with git (episode I)](droplets-04-git/droplets-04-git.md)
 
 A summary of the sessions can also be found in the [Droplets webpage](https://droplets-spsrc.readthedocs.io/sessions/).
 
