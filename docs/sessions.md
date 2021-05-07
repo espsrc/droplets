@@ -24,4 +24,4 @@ In this session we will have a gentle introduction to Github. The problem we wan
 - Date: 2021-05-10
 - Presenter: Manuel Parra (IAA-CSIC)
 
-In this session we will introduce git. We will show how to work on a local repository, how to travel in (git)time and how to work with branches. The session notes will be available soon. We also have additional resources in the [droplets webpage](https://droplets-spsrc.readthedocs.io/git/). 
+In this session we will introduce git. We will show how to work on a local repository, how to travel in (git)time and how to work with branches. The session notes are available in [Session 04](https://github.com/spsrc/droplets/blob/master/sessions/droplets-04-git/droplets-04-git.md). We also have a tutorial and additional resources in the [droplets webpage](https://droplets-spsrc.readthedocs.io/git/).
