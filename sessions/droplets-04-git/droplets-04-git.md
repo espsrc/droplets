@@ -1,6 +1,8 @@
 # Open Science Droplets 04
 # Version control with git (episode I)
 
+Slides for this session are available in [droplets-04-introduction-slides.pdf](droplets-04-git/droplets-04-introduction-slides.pdf)
+
 ## Set up
 First we will check if you have `git` installed in your computer. Open a terminal and write:
 ```bash
