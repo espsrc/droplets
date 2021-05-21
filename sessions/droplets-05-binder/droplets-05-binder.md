@@ -1,5 +1,5 @@
 # Open Science Droplets 05
-# Share your results with the World with Binder
+# Share your project with the World with Binder
 
 ## Purpose
 
