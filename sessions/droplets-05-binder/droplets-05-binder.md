@@ -2,7 +2,8 @@
 # Share your results with the World with Binder
 
 ## Purpose
-We will create a Jupyter notebook to download a cutout image of a particular source from astronomical surveys using the [NASA Skyview service](https://skyview.gsfc.nasa.gov/current/cgi/titlepage.pl). We will include the script in the IAA-CSIC Github organization so anyone can use and contribute to the code. Finally, we will make everything ready to be executed in the cloud using the service provided by [myBinder](https://mybinder.org/).
+
+We will create a Jupyter notebook that downloads the image image of a source from astronomical surveys using the [NASA Skyview service](https://skyview.gsfc.nasa.gov/current/cgi/titlepage.pl). We will include the script in the IAA-CSIC Github organization so anyone can use and contribute to the code. Finally, we will make everything ready to be executed in the cloud using the service provided by [myBinder](https://mybinder.org/).
 
 We will show the natural process to construct and work with the repository, starting with this already created code [skyview_func.py](https://gist.github.com/jmoldon/678f44f08216e143ba23c54b15055adf).
 
