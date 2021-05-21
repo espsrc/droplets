@@ -25,3 +25,11 @@ In this session we will have a gentle introduction to Github. The problem we wan
 - Presenter: Manuel Parra (IAA-CSIC)
 
 In this session we will introduce git. We will show how to work on a local repository, how to travel in (git)time and how to work with branches. The session notes are available in [Session 04](https://github.com/spsrc/droplets/blob/master/sessions/droplets-04-git/droplets-04-git.md). The slides with explanations on the commands are in [droplets-04-introduction-slides.pdf](https://github.com/spsrc/droplets/blob/master/sessions/droplets-04-git/droplets-04-introduction-slides.pdf). We also have a tutorial and additional resources in the [droplets webpage](https://droplets-spsrc.readthedocs.io/git/).
+
+# Session 05 - Share your project with the World with Binder
+
+- Date: 2021-05-24
+- Presenter: Javier Moldón (IAA-CSIC)
+
+We will create a Jupyter notebook that downloads the image image of a source from astronomical surveys using the [NASA Skyview service](https://skyview.gsfc.nasa.gov/current/cgi/titlepage.pl). We will include the script in the IAA-CSIC Github organization so anyone can use and contribute to the code. Finally, we will make everything ready to be executed in the cloud using the service provided by [myBinder](https://mybinder.org/). The session notes are in [Session 05](https://github.com/spsrc/droplets/blob/master/sessions/droplets-05-binder/droplets-05-binder.md)
+
