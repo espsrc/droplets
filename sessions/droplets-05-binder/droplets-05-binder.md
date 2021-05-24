@@ -9,7 +9,7 @@ We will show the natural process to construct and work with the repository, star
 
 ##
 
-### Show the original script
+### Explore the original script
 
 The available catalogs can be seen here: https://skyview.gsfc.nasa.gov/current/cgi/query.pl
 
@@ -96,7 +96,7 @@ In the same page, you can copy the URL below and share your Binder with others. 
 
 You can also add this to the link to start Jupyter Lab instead of the more basic Jupyter:
 ```
-?urlpath=lab/tree/ipynb
+?urlpath=lab/tree/<name-of-notebook.ipynb>
 ```
 
 ## Summary
