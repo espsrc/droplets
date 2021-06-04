@@ -7,6 +7,7 @@
 - [Session 03 - Collaborative science using Github](droplets-03-github/droplets-03-github.md)
 - [Session 04 - Version control with git (episode I)](droplets-04-git/droplets-04-git.md)
 - [Session 05 - Share your project with the World with Binder](droplets-05-binder/droplets-05-binder.md)
+- [Session 06 - Your work for posterity: Zenodo](droplets-06-zenodo/droplets-06-zenodo.md)
 
 A summary of the sessions can also be found in the [Droplets webpage](https://droplets-spsrc.readthedocs.io/sessions/).
 

@@ -33,3 +33,9 @@ In this session we will introduce git. We will show how to work on a local repos
 
 We will create a Jupyter notebook that downloads the image image of a source from astronomical surveys using the [NASA Skyview service](https://skyview.gsfc.nasa.gov/current/cgi/titlepage.pl). We will include the script in the IAA-CSIC Github organization so anyone can use and contribute to the code. Finally, we will make everything ready to be executed in the cloud using the service provided by [myBinder](https://mybinder.org/). The session notes are in [Session 05](https://github.com/spsrc/droplets/blob/master/sessions/droplets-05-binder/droplets-05-binder.md)
 
+# Session 06 - Your work for posterity: Zenodo
+
+- Date: 2021-06-07
+- Presenter: Laura Darriba (IAA-CSIC)
+
+In this session we will use [Zenodo](https://zenodo.org/) to store our finished research. Zenodo provides a platform to upload our research data, software, preprints, etc. safely and permanently (at least for the lifetime of the host laboratory CERN, so minimum 20 years, likely much more). Zenodo also helps researchers receive credit by making the research results citable by providing a unique identifier DOI. The session notes are in [Session 06](https://github.com/spsrc/droplets/blob/master/sessions/droplets-06-binder/droplets-06-zenodo.md)
