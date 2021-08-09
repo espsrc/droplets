@@ -86,6 +86,6 @@ rm -r droplets
 In case you were working with your own conda installation, you can delete the environment with:
 
 ```bash
-conda remove -n droplets
+conda env remove -n droplets
 ```
 
