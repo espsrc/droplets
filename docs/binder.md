@@ -65,30 +65,33 @@ We'll now cover three ways you can manipulate your Binder URL to navigate betwee
 
 Here is the structure of the URL inside a running Binder instance running JupyterLab:
 
-> **https://<some-prefix>.mybinder.org/user/<a composite of your username, your repo name and a hash>/lab**
+```
+https://<some-prefix>.mybinder.org/user/<a composite of your username, your repo name and a hash>/lab
+```
 
 You can change the interface from JupyterLab to either the Classic Notebook or RStudio by changing the `/lab` part of the URL to:
 
-- **Classic Notebook:** `/tree`
-- **RStudio:** `/rstudio`
+- Classic Notebook: `/tree`
+- RStudio: `/rstudio`
 
 ### by changing the mybinder.org launch link
 
 Here is the launch link you have been using throughout this tutorial:
 
-> **https://mybinder.org/v2/gh/YOUR-USERNAME/my-first-binder/HEAD**
+> https://mybinder.org/v2/gh/YOUR-USERNAME/my-first-binder/HEAD
 
 You can access each interface by appending once of the following to the end of you URL:
 
-- **Jupyter Notebook:** `?urlpath=tree`
-- **JupyterLab:** `?urlpath=lab`
-- **RStudio:** `?urlpath=rstudio`
+- Jupyter Notebook: `?urlpath=tree`
+- JupyterLab: `?urlpath=lab`
+- RStudio: `?urlpath=rstudio`
 
 ### by using the mybinder.org form
 
 You can also set the interface when constructing your launch link on the mybinder.org website (instead of editing the URL directly) as demonstrated in the below gif.
 
-```{figure} https://user-images.githubusercontent.com/1448859/53651127-4dabe900-3c46-11e9-8684-2cfde840d4ce.gif
+![](images/binder_example.gif)
+
 ---
 name: changing_interfaces
 alt: A gif demonstrating how to change the interface of a Binder on the mybinder.org website
