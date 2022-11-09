@@ -9,14 +9,21 @@ The contents of this chapter comes from [Zero-to-Binder](https://the-turing-way.
 
 ## Launch your first repo!
 
-1) Go to **<https://mybinder.org>**
-2) Type the URL of your repo into the "GitHub repo or URL" box.
-   It should look like this:
-   > **https://github.com/YOUR-USERNAME/my-first-binder**
+1) Go to <https://mybinder.org>  
+
+2) Type the URL of your repo into the "GitHub repo or URL" box. It should look like this:  
+````
+   > https://github.com/YOUR-USERNAME/my-first-binder  
+````
+
 3) As you type, the webpage generates a link in the "Copy the URL below..." box
    It should look like this:
-   > **https://mybinder.org/v2/gh/YOUR-USERNAME/my-first-binder/HEAD**
-4) Copy it, open a new browser tab and visit that URL
+
+````
+   > https://mybinder.org/v2/gh/YOUR-USERNAME/my-first-binder/HEAD
+````
+
+4) Copy it, open a new browser tab and visit that URL  
    - You will see a "spinner" as Binder launches the repo
 
 If everything ran smoothly, you'll see a JupyterLab interface.
@@ -32,22 +39,35 @@ While you wait, BinderHub (the backend of Binder) is:
 
 ## Pinning Dependencies
 Python
+
 1) In your repo, create a file called `requirements.txt`
+
 2) Add a line that says: `numpy==1.14.5`
+
 3) Check for typos! Then commit to the `main` branch
-4) Visit **https://mybinder.org/v2/gh/YOUR-USERNAME/my-first-binder/HEAD** again in a new tab
+
+4) Visit https://mybinder.org/v2/gh/YOUR-USERNAME/my-first-binder/HEAD again in a new tab
 
 R
+
 1) In your repo, create a file called `install.R`
+
 2) Add a line that says: `install.packages("readr")`
+
 3) Check for typos! Then commit to the `main` branch
-4) Visit **https://mybinder.org/v2/gh/YOUR-USERNAME/my-first-binder/HEAD** again in a new tab
+
+4) Visit https://mybinder.org/v2/gh/YOUR-USERNAME/my-first-binder/HEAD again in a new tab
 
 ## Sharing your Work
 
 Binder is all about sharing your work easily and there are two ways to do it:
- - Share the https://mybinder.org/v2/gh/YOUR-USERNAME/my-first-binder/HEAD URL directly
- - Visit https://mybinder.org, type in the URL of your repo and copy the Markdown or ReStructured Text snippet into your README.md file. This snippet will render a badge that people can click, which looks like this: 
+- Share the https://mybinder.org/v2/gh/YOUR-USERNAME/my-first-binder/HEAD URL directly
+- Visit [mybinder.org](https://mybinder.org), type in the URL of your repo and copy the Markdown or ReStructured Text snippet into your README.md file.
+
+This snippet will render a badge that people can click, which looks like this: 
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/spsrc/droplets/master?filepath=gaia_exploratory%2Fjupyter_exploratory.ipynb)
+
 
 ## Changing the Interface
 
@@ -65,9 +85,9 @@ We'll now cover three ways you can manipulate your Binder URL to navigate betwee
 
 Here is the structure of the URL inside a running Binder instance running JupyterLab:
 
-```
-https://<some-prefix>.mybinder.org/user/<a composite of your username, your repo name and a hash>/lab
-```
+````
+https://<some-prefix>.mybinder.org/user/<name+repo>/lab
+````
 
 You can change the interface from JupyterLab to either the Classic Notebook or RStudio by changing the `/lab` part of the URL to:
 
@@ -92,13 +112,7 @@ You can also set the interface when constructing your launch link on the mybinde
 
 ![](images/binder_example.gif)
 
----
-name: changing_interfaces
-alt: A gif demonstrating how to change the interface of a Binder on the mybinder.org website
----
-
 Use the "URL to open" option on the mybinder.org site to select your interface
-```
 
 # Examples
 
