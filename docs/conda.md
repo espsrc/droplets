@@ -45,9 +45,7 @@ bash Mambaforge-$(uname)-$(uname -m).sh
 
 It is very easy to clean your system and uninstall the conda installation by following the instructions here](https://github.com/conda-forge/miniforge#uninstallation). This works for unix-type installations.
 
-```bash
-Uninstalling Miniforge/Mambaforge means removing the files that were created during the installation process.
-You will typically want to remove:
+Uninstalling Miniforge/Mambaforge means removing the files that were created during the installation process. You will typically want to remove:
 
 1. Any modifications to your shell rc files that were made by Miniforge:
 
