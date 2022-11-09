@@ -32,7 +32,7 @@ This documentation and all the resources used in the course are available in the
 
 # Contributors
 
-Javier Moldón, Sebastián Luna and Laura Darriba, from the [Institute of Astrophysics of Andalusia](https://www.iaa.csic.es/) (IAA-CSIC), a [Severo Ochoa Center](http://so.iaa.csic.es/).
+Javier Moldón, Sebastián Luna, Laura Darriba and Manuel Parra, from the [Institute of Astrophysics of Andalusia](https://www.iaa.csic.es/) (IAA-CSIC), a [Severo Ochoa Center](http://so.iaa.csic.es/).
 
 We are open to contributions from anyone! Visit the Github repository  [Droplets](https://github.com/spsrc/droplets).
 
