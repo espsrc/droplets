@@ -77,8 +77,6 @@ echo ${HOME}/.condarc will be removed if it exists
 rm -f "${HOME}/.condarc"
 ```
 
-```
-
 # Working with conda environments
 
 Once we have installed conda/miniconda we are in the `base` environment. Now, we can create our environment for our first project.
