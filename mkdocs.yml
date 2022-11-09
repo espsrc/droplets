@@ -13,6 +13,7 @@ nav:
     - Software management with conda: conda.md
     # - Python interactive visualization (TBD): interactive.md
     - Binder: binder.md
+    - Intro to singularity containers: containers.md
     - Snakemake (TBD): snakemake.md
     - Containers (TBD): containers.md
     - Reproducibility examples (TBD): reproducibility.md
