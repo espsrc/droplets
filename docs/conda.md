@@ -26,9 +26,58 @@ You can follow the instructions (download the exe file) from here: https://docs.
 
 [mamba](https://github.com/mamba-org/mamba) is a very efficient dependency solver. If you don't have it, you can substitute all `mamba` commands with `conda`, and it will do the same but slower. You can install it in the base environment with:
 
-
 ```
 conda install mamba -n base -c conda-forge
+```
+
+!!! warning
+    Remember you can replace the command `conda` by `mamba` if you have mamba installed. Except when you activate or desactivate environments, for which you still need to use `conda`.
+
+## Mambaforge
+This is an optional way of having everything in one go by skipping miniconda and installing directly. Additionally, this will set by default `conda-forge` as the main and only channel. 
+
+```bash
+wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
+bash Mambaforge-$(uname)-$(uname -m).sh
+```
+
+### Uninstallation
+
+It is very easy to clean your system and uninstall the conda installation by following the instructions here](https://github.com/conda-forge/miniforge#uninstallation). This works for unix-type installations.
+
+```bash
+Uninstalling Miniforge/Mambaforge means removing the files that were created during the installation process.
+You will typically want to remove:
+
+1. Any modifications to your shell rc files that were made by Miniforge:
+
+```bash
+# Use this first command to see what rc files will be updated
+conda init --reverse --dry-run
+# Use this next command to take action on the rc files listed above
+conda init --reverse
+# Temporarily IGNORE the shell message 
+#       'For changes to take effect, close and re-open your current shell.', 
+# and CLOSE THE SHELL ONLY AFTER the 3rd step below is completed.
+```
+
+2. Remove the folder and all subfolders where the base environment for Miniforge was installed:
+
+```bash
+CONDA_BASE_ENVIRONMENT=$(conda info --base)
+echo The next command will delete all files in ${CONDA_BASE_ENVIRONMENT}
+# Warning, the rm command below is irreversible!
+# check the output of the echo command above
+# To make sure you are deleting the correct directory
+rm -rf ${CONDA_BASE_ENVIRONMENT}
+```
+
+3. Any global conda configuration files that are left behind.
+
+```bash
+echo ${HOME}/.condarc will be removed if it exists
+rm -f "${HOME}/.condarc"
+```
 
 ```
 
