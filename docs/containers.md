@@ -5,18 +5,18 @@
 **Table of contents**
 
 <!-- vscode-markdown-toc -->
-* 1. [Containers, images, ...  ?](#Containersimages...)
-* 2. [What containers are not](#Whatcontainersarenot)
-* 3. [Why do you (and don't) need containers](#Whydoyouanddontneedcontainers)
-* 4. [Singularity installation](#Singularityinstallation)
-* 5. [What is Singularity and what advantages does it have over Docker](#WhatisSingularityandwhatadvantagesdoesithaveoverDocker)
-* 6. [Singularity Commands](#SingularityCommands)
-* 7. [Containers Hub](#ContainersHub)
-* 8. [Interact with images](#Interactwithimages)
+1. [Containers, images, ...  ?](#Containersimages...)
+2. [What containers are not](#Whatcontainersarenot)
+3. [Why do you (and don't) need containers](#Whydoyouanddontneedcontainers)
+4. [Singularity installation](#Singularityinstallation)
+5. [What is Singularity and what advantages does it have over Docker](#WhatisSingularityandwhatadvantagesdoesithaveoverDocker)
+6. [Singularity Commands](#SingularityCommands)
+7. [Containers Hub](#ContainersHub)
+8. [Interact with images](#Interactwithimages)
 	* 8.1. [Entering the images from a shell](#Enteringtheimagesfromashell)
 	* 8.2. [Executing command from a container](#Executingcommandfromacontainer)
-* 9. [Building our own container](#Buildingourowncontainer)
-* 10. [References](#References)
+9. [Building our own container](#Buildingourowncontainer)
+10. [References](#References)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
