@@ -1,54 +1,35 @@
-# Installing miniconda
-
-We recommend using `conda` to manage the dependencies. Miniconda is a light-weight version of Anaconda. First we show how to install Miniconda if you don't have it already. More details [here](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html#regular-installation)
+# Installing Miniforge
+We recommend using `conda` with `mamba` to manage the dependencies. **Miniforge** is a conda distribution that includes mamba by default and uses [conda-forge](https://conda-forge.org/) as the primary channel. First we show how to install Miniforge if you don't have it already. More details in the [miniforge repository](https://github.com/conda-forge/miniforge).
 
 You can skip this step if you already have conda available in your path.
 
-## Miniconda for Linux:
+## Miniforge for Linux and macOS:
 ```bash
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
-bash ./Miniconda3-latest-Linux-x86_64.sh
-rm ./Miniconda3-latest-Linux-x86_64.sh
+wget "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
+bash Miniforge3-$(uname)-$(uname -m).sh
+rm Miniforge3-$(uname)-$(uname -m).sh
 ```
+## Miniforge for Windows:
+You can follow the instructions (download the exe file) from [here](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows). 
 
-## Miniconda for macOS:
-```bash
-curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh
-bash Miniconda3-latest-MacOSX-x86_64.sh
-rm Miniconda3-latest-MacOSX-x86_64.sh
-```
-
-## Miniconda for Windows:
-You can follow the instructions (download the exe file) from here: https://docs.conda.io/projects/conda/en/latest/user-guide/install/windows.html
-
+## Alternative: Traditional Miniconda installation
+If you prefer the traditional Miniconda installation, you can find detailed instructions [here](https://www.anaconda.com/docs/getting-started/miniconda/install#linux-2).
 
 ## Mamba!
-
-[mamba](https://github.com/mamba-org/mamba) is a very efficient dependency solver. If you don't have it, you can substitute all `mamba` commands with `conda`, and it will do the same but slower. You can install it in the base environment with:
-
+[mamba](https://github.com/mamba-org/mamba) is a very efficient dependency solver that comes pre-installed with Miniforge. If you're using a traditional conda installation and don't have mamba, you can install it with:
 ```
 conda install mamba -n base -c conda-forge
 ```
 
 !!! warning
-    Remember you can replace the command `conda` by `mamba` if you have mamba installed. Except when you activate or desactivate environments, for which you still need to use `conda`.
-
-## Mambaforge
-This is an optional way of having everything in one go by skipping miniconda and installing directly. Additionally, this will set by default `conda-forge` as the main and only channel. 
-
-```bash
-wget "https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-$(uname)-$(uname -m).sh"
-bash Mambaforge-$(uname)-$(uname -m).sh
-```
+    Remember you can replace the command `conda` by `mamba` if you have mamba installed. In some installations, you still need to use `conda` to activate or deactivate environments.
 
 ### Uninstallation
+It is very easy to clean your system and uninstall the conda installation by following the instructions [here](https://github.com/conda-forge/miniforge#uninstallation). This works for unix-type installations.
 
-It is very easy to clean your system and uninstall the conda installation by following the instructions here](https://github.com/conda-forge/miniforge#uninstallation). This works for unix-type installations.
-
-Uninstalling Miniforge/Mambaforge means removing the files that were created during the installation process. You will typically want to remove:
+Uninstalling Miniforge means removing the files that were created during the installation process. You will typically want to remove:
 
 1. Any modifications to your shell rc files that were made by Miniforge:
-
 ```bash
 # Use this first command to see what rc files will be updated
 conda init --reverse --dry-run
@@ -60,7 +41,6 @@ conda init --reverse
 ```
 
 2. Remove the folder and all subfolders where the base environment for Miniforge was installed:
-
 ```bash
 CONDA_BASE_ENVIRONMENT=$(conda info --base)
 echo The next command will delete all files in ${CONDA_BASE_ENVIRONMENT}
@@ -71,7 +51,6 @@ rm -rf ${CONDA_BASE_ENVIRONMENT}
 ```
 
 3. Any global conda configuration files that are left behind.
-
 ```bash
 echo ${HOME}/.condarc will be removed if it exists
 rm -f "${HOME}/.condarc"
@@ -145,7 +124,7 @@ mamba install pip
 
 The best practice is to store all the main dependencies in an environment file:
 
-Contents of file `environment.yml`:
+Contents of file `environment.yaml`:
 ```yml
 name: r-env
   
@@ -161,7 +140,7 @@ dependencies:
 ```
 
 ```
-mamba env create -f environment.yml
+mamba env create -f environment.yaml
 ```
 
 Now we can access the environment with:
@@ -201,5 +180,5 @@ conda env remove -n r_3.5
 # Let's save our analysis in Github
 
 - Create repository
-- Add environment.yml, script.r, ouput.png, README with instruction
+- Add environment., script.r, ouput.png, README with instruction
 
